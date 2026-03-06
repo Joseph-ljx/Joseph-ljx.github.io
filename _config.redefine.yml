@@ -1,0 +1,84 @@
+info:
+  title: Ray Zeng
+  author: Ray Zeng
+  subtitle: DS | AIE | MLE
+  url: https://ray1208xxxx.github.io
+
+defaults:
+  favicon: /images/logo-mars.png
+  logo: /images/logo-mars.png
+  avatar: /images/avatar.png
+
+home_banner:
+  enable: true
+  style: fixed   
+  image:
+    light: /images/IMG_3717.jpg
+    dark: /images/IMG_3717.jpg
+  title: Ray Zeng
+  subtitle:
+    text:
+      - "Current Data Scientist @ Intel"
+      - "Open to collaborations!"
+  text_color:
+    light: "#ffffff"
+    dark: "#d1d1b6"
+  text_style:
+    title_size: 3.5rem
+    subtitle_size: 1.8rem
+  social_links:
+    enable: true
+    links:
+      github: https://github.com/ray1208xxxx
+      fa-brands fa-linkedin: https://www.linkedin.com/in/pengrui-ray-zeng1208/
+      fa-brands fa-kaggle: https://www.kaggle.com/你的kaggle
+
+navbar:
+  auto_generate: false
+  auto_hide: false
+  links:
+    EXPERIENCE:
+      path: /archives/
+      icon: fa-regular fa-folder-open
+    TRAVEL:
+      icon: fa-solid fa-bookmark 
+      path: /bookmarks/
+    ABOUT:
+      icon: fa-regular fa-user
+      submenus:
+        RESUME: /about/
+        GITHUB: https://github.com/ray1208xxxx
+    LINK:
+      icon: fa-regular fa-link
+      submenus:
+        LINKEDIN: https://www.linkedin.com/in/pengrui-ray-zeng1208/
+
+articles:
+  word_count: 
+    enable: false
+    min2read: false
+  author_label: 
+    list: ["DS"]
+
+search:
+  enable: true
+  preload: true
+
+plugins:
+  link_handle:
+    enable: false
+  aplayer:  
+        enable: true
+        type: fixed
+        autoplay: true
+        audios:
+            - name: Sofa bed 
+              artist: PO8
+              url: /music/PO8 - Sofa bed.mp3
+              cover: /images/PO8.png
+          
+inject:
+  enable: false
+
+comment:
+  enable: false

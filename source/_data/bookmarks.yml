@@ -1,0 +1,380 @@
+
+- category: United States - California (CA)
+  icon: fa-solid fa-umbrella-beach
+  items:
+    - name: "[Attraction] Yosemite National Park"
+      link: https://www.nps.gov/yose/index.htm
+      description: Official Yosemite guide - tickets, alerts, hiking trails, camping
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=nps.gov
+
+    - name: "[Attraction] Golden Gate Bridge- SF"
+      link: https://www.goldengate.org/
+      description: Viewpoints, walking and cycling routes, visitor information
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=goldengate.org
+
+    - name: "[Hotel] Marriott - California"
+      link: https://www.marriott.com/
+      description: Reliable hotel chain - filter by California cities and dates
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=marriott.com
+
+    - name: "[Hotel] Booking - California"
+      link: https://www.booking.com/
+      description: Compare hotels by location, reviews, and cancellation options
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=booking.com
+
+    - name: "[Food] Eater Los Angeles"
+      link: https://la.eater.com/
+      description: Curated restaurant lists, new openings, local food guides
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=eater.com
+
+    - name: "[Food] Eater San Francisco"
+      link: https://sf.eater.com/
+      description: Bay Area dining guides for brunch, coffee, and fine dining
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=eater.com
+
+    - name: "[Itinerary] Pacific Coast Highway"
+      link: https://www.visitcalifornia.com/
+      description: Road trip ideas - Los Angeles to San Francisco via Big Sur
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitcalifornia.com
+
+    - name: "[Itinerary] San Francisco 3 Day City Plan"
+      link: https://www.sftravel.com/
+      description: Suggested 2 to 3 day plan covering landmarks and transport
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=sftravel.com
+
+
+- category: United States - New York (NY)
+  icon: fa-solid fa-city
+  items:
+    - name: "[Attraction] Statue of Liberty"
+      link: https://www.nps.gov/stli/index.htm
+      description: Ferry access, tickets, island visits, and museum information
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=nps.gov
+
+    - name: "[Attraction] Central Park"
+      link: https://www.centralparknyc.org/
+      description: Park maps, activities, seasonal highlights, and events
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=centralparknyc.org
+
+    - name: "[Hotel] Hilton - New York City"
+      link: https://www.hilton.com/
+      description: Well located hotels across Manhattan and nearby areas
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=hilton.com
+
+    - name: "[Hotel] Hyatt - New York"
+      link: https://www.hyatt.com/
+      description: Strong Midtown and Downtown options with loyalty benefits
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=hyatt.com
+
+    - name: "[Food] Eater New York"
+      link: https://ny.eater.com/
+      description: Restaurant recommendations, new openings, neighborhood guides
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=eater.com
+
+    - name: "[Food] The Infatuation New York"
+      link: https://www.theinfatuation.com/new-york
+      description: Dining recommendations by scenario such as dates or groups
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=theinfatuation.com
+
+    - name: "[Itinerary] NYC Official Travel Guide"
+      link: https://www.nycgo.com/
+      description: Official itineraries, events, museums, and Broadway shows
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=nycgo.com
+
+    - name: "[Itinerary] Niagara Falls - New York Side"
+      link: https://www.niagarafallsstatepark.com/
+      description: State park guide with viewpoints and seasonal travel tips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=niagarafallsstatepark.com
+
+
+- category: United States - Pennsylvania (PA)
+  icon: fa-solid fa-landmark
+  items:
+    - name: "[Attraction] Independence National Historical Park"
+      link: https://www.nps.gov/inde/index.htm
+      description: Independence Hall, Liberty Bell, and historic landmarks
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=nps.gov
+
+    - name: "[Attraction] Fallingwater by Frank Lloyd Wright"
+      link: https://fallingwater.org/
+      description: Iconic architectural site with visitor tours and tickets
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=fallingwater.org
+
+    - name: "[Hotel] Marriott - Philadelphia"
+      link: https://www.marriott.com/
+      description: Downtown and convention area hotels for short stays
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=marriott.com
+
+    - name: "[Hotel] Booking - Pennsylvania"
+      link: https://www.booking.com/
+      description: Accommodation options across cities and small towns
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=booking.com
+
+    - name: "[Food] Reading Terminal Market"
+      link: https://readingterminalmarket.org/
+      description: Famous indoor market with local food and classic dishes
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=readingterminalmarket.org
+    
+    - name: "[Itinerary] VisitPA Road Trips"
+      link: https://www.visitpa.com/
+      description: Scenic and themed road trips across Pennsylvania
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitpa.com
+
+    - name: "[Food] Visit Philly Food and Drink"
+      link: https://www.visitphilly.com/
+      description: Official dining guides for restaurants and cafes
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitphilly.com
+
+    - name: "[Itinerary] Pittsburgh Official Guide"
+      link: https://www.visitpittsburgh.com/
+      description: Two to three day ideas covering museums and viewpoints
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitpittsburgh.com
+
+
+- category: United States - Florida (FL)
+  icon: fa-solid fa-sun
+  items:
+    - name: "[Attraction] Everglades National Park"
+      link: https://www.nps.gov/ever/index.htm
+      description: Wetlands park with wildlife tours, airboat rides, and trails
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=nps.gov
+
+    - name: "[Attraction] Kennedy Space Center"
+      link: https://www.kennedyspacecenter.com/
+      description: Visitor complex with rockets, exhibits, and launch events
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=kennedyspacecenter.com
+
+    - name: "[Hotel] Marriott - Florida"
+      link: https://www.marriott.com/
+      description: Coverage across Miami, Orlando, and beach destinations
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=marriott.com
+
+    - name: "[Hotel] Booking - Florida"
+      link: https://www.booking.com/
+      description: Compare beach resorts and vacation rentals
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=booking.com
+
+    - name: "[Food] Eater Miami - For good taste"
+      link: https://miami.eater.com/
+      description: Miami dining guides for popular spots and local favorites
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=eater.com
+
+    - name: "[Food] Orlando and Tampa Bay Dining"
+      link: https://www.eater.com/search?q=Orlando%20restaurants
+      description: Search based guides for Orlando and Tampa Bay restaurants
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=eater.com
+
+    - name: "[Itinerary] Visit Florida Official Guide"
+      link: https://www.visitflorida.com/
+      description: Official travel site for beaches, theme parks, and cities
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitflorida.com
+
+    - name: "[Itinerary] Florida Keys Road Trip"
+      link: https://www.fla-key
+      description: Scenic drive from Key Largo to Key West with island stops
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=fla-keys.com
+
+
+- category: separator
+  icon: fa-solid fa-minus
+  items: []  
+
+
+- category: Australia - Victoria (VIC)
+  icon: fa-solid fa-mountain-sun
+  items:
+    - name: "[Attraction] The Great Ocean Road"
+      link: https://www.visitvictoria.com/regions/great-ocean-road
+      description: Coastal road trip - Twelve Apostles, beach viewpoints, short hikes
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitvictoria.com
+
+    - name: "[Attraction] Phillip Island Penguin Parade"
+      link: https://www.penguins.org.au/
+      description: Penguin viewing experience - tickets, session times, visitor tips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=penguins.org.au
+
+    - name: "[Hotel] Booking - Victoria"
+      link: https://www.booking.com/
+      description: Compare hotels and apartments - filter by CBD, St Kilda, Geelong
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=booking.com
+
+    - name: "[Hotel] Marriott - Melbourne"
+      link: https://www.marriott.com/
+      description: Reliable city stays - good for business travel and weekend trips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=marriott.com
+
+    - name: "[Food] Broadsheet Melbourne"
+      link: https://www.broadsheet.com.au/melbourne
+      description: Melbourne food and cafe guides - new openings and trending spots
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=broadsheet.com.au
+
+    - name: "[Food] Time Out Melbourne"
+      link: https://www.timeout.com/melbourne
+      description: Best restaurants and things to do - lists by neighborhood
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=timeout.com
+
+    - name: "[Itinerary] Melbourne Official Guide"
+      link: https://www.visitvictoria.com/regions/melbourne
+      description: 2 to 4 day city plan - laneways, museums, day trips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitvictoria.com
+
+    - name: "[Itinerary] Public Transport Victoria"
+      link: https://www.ptv.vic.gov.au/
+      description: Trip planner and service updates - trains, trams, buses
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=ptv.vic.gov.au
+
+- category: Australia - Queensland (QLD)
+  icon: fa-solid fa-water
+  items:
+    - name: "[Attraction] Great Barrier Reef"
+      link: https://parksaustralia.gov.au/marine/parks/great-barrier-reef/
+      description: Reef information and conservation - planning, safety, park rules
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=parksaustralia.gov.au
+
+    - name: "[Attraction] Gold Coast"
+      link: https://www.destinationgoldcoast.com/
+      description: Beaches and theme parks - attractions, events, travel tips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=destinationgoldcoast.com
+
+    - name: "[Hotel] Booking - Queensland"
+      link: https://www.booking.com/
+      description: Brisbane, Gold Coast, Cairns stays - compare and filter easily
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=booking.com
+
+    - name: "[Hotel] Marriott - Queensland"
+      link: https://www.marriott.com/
+      description: Chain options in major cities - good for consistent quality
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=marriott.com
+
+    - name: "[Food] Broadsheet Brisbane"
+      link: https://www.broadsheet.com.au/brisbane
+      description: Brisbane food and cafe guides - new openings and best lists
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=broadsheet.com.au
+
+    - name: "[Food] Time Out Brisbane"
+      link: https://www.timeout.com/brisbane
+      description: Dining lists and events - easy picks for short trips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=timeout.com
+
+    - name: "[Itinerary] Visit Brisbane"
+      link: https://www.visitbrisbane.com.au/
+      description: City itineraries and experiences - markets, river walks, day trips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visitbrisbane.com.au
+
+    - name: "[Itinerary] Translink Queensland"
+      link: https://translink.com.au/
+      description: Public transport planning - trains, buses, ferries
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=translink.com.au
+
+- category: Australia - South Australia (SA)
+  icon: fa-solid fa-wine-glass
+  items:
+    - name: "[Attraction] Barossa Valley"
+      link: https://southaustralia.com/destinations/barossa
+      description: Wine region guide - cellar doors, day tours, seasonal events
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=southaustralia.com
+
+    - name: "[Attraction] Kangaroo Island"
+      link: https://southaustralia.com/destinations/kangaroo-island
+      description: Wildlife and coastlines - scenic drives and nature experiences
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=southaustralia.com
+
+    - name: "[Hotel] Booking - South Australia"
+      link: https://www.booking.com/
+      description: Adelaide and regional stays - compare hotels and apartments
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=booking.com
+
+    - name: "[Hotel] Hilton - Adelaide Downtown"
+      link: https://www.hilton.com/
+      description: Central city options - convenient base for day trips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=hilton.com
+
+    - name: "[Food] Time Out Adelaide"
+      link: https://www.timeout.com/adelaide
+      description: Restaurant lists and events - quick picks for weekends
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=timeout.com
+
+    - name: "[Food] South Australia"
+      link: https://southaustralia.com/food-and-wine
+      description: Official food and wine guide - regions, producers, experiences
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=southaustralia.com
+
+    - name: "[Itinerary] South Australia Official Guide"
+      link: https://southaustralia.com/
+      description: Itineraries and destination planning - Adelaide and wine regions
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=southaustralia.com
+
+    - name: "[Itinerary] Adelaide Transport Guide"
+      link: https://www.adelaidemetro.com.au/
+      description: Public transport planning - buses, trains, trams
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=adelaidemetro.com.au
+
+
+- category: separator
+  icon: fa-solid fa-minus
+  items: []  
+
+
+- category: Kenya - Rift Valley and Safari Regions
+  icon: fa-solid fa-paw
+  items:
+    - name: "[Attraction] Maasai Mara National Reserve"
+      link: https://www.maasaimara.com/
+      description: Iconic safari destination - Great Migration, big cats, game drives
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=maasaimara.com
+
+    - name: "[Attraction] Amboseli National Park"
+      link: https://www.kws.go.ke/content/amboseli-national-park
+      description: Elephant herds with Mount Kilimanjaro views
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=kws.go.ke
+
+    - name: "[Hotel] Masai Mara Sopa Lodge"
+      link: https://www.sopalodges.com/masai-mara-sopa-lodge
+      description: Classic safari lodge - elevated views, game drives, full board stay
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=sopalodges.com
+
+    - name: "[Hotel] Amboseli Sopa Lodge"
+      link: https://www.sopalodges.com/amboseli-sopa-lodge
+      description: Safari lodge near Kilimanjaro - elephants, open plains, nature walks
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=sopalodges.com
+
+    - name: "[Itinerary] Kenya Safari Travel Guide"
+      link: https://www.magicalkenya.com/
+      description: Safari planning guide - parks, seasons, routes, and tips
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=magicalkenya.com
+
+
+- category: Egypt - Nile Valley and Red Sea
+  icon: fa-solid fa-ankh
+  items:
+    - name: "[Attraction] Pyramids of Giza"
+      link: https://egymonuments.gov.eg/
+      description: Ancient wonders near Cairo - pyramids, sphinx, and history
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=egymonuments.gov.eg
+
+    - name: "[Itinerary] Egypt Travel Guide"
+      link: https://www.egypt.travel/
+      description: Official guide - Cairo, Nile cruise, Red Sea, and itineraries
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=egypt.travel
+
+    - name: "[Museum] Egyptian Museum Cairo"
+      link: https://egyptianmuseumcairo.eg/
+      description: Classic national museum - royal mummies, Tutankhamun artifacts
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=egyptianmuseumcairo.eg
+
+    - name: "[Museum] Grand Egyptian Museum"
+      link: https://www.visit-gem.com/
+      description: Modern museum near Giza - large scale exhibitions and galleries
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=visit-gem.com
+
+    - name: "[Attraction] Luxor and Valley of the Kings"
+      link: https://whc.unesco.org/en/list/87/
+      description: Temples and royal tombs along the Nile - Luxor highlights
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=unesco.org
+
+    - name: "[Attraction] Luxor and Valley of the Kings"
+      link: https://whc.unesco.org/en/list/87/
+      description: Temples and tombs along the Nile - Luxor highlights
+      image: https://www.google.com/s2/favicons?sz=64&domain_url=unesco.org
+
+    
