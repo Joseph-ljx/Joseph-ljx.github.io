@@ -1,6 +1,8 @@
 // scripts/inject_cv.js
 
-hexo.extend.injector.register('head_end', `
+hexo.extend.injector.register(
+  "head_end",
+  `
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
   <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script type="importmap">
@@ -1660,9 +1662,12 @@ hexo.extend.injector.register('head_end', `
     }
 
   </style>
-`);
+`,
+);
 
-hexo.extend.injector.register('body_begin', `
+hexo.extend.injector.register(
+  "body_begin",
+  `
   <div id="loader-overlay">
     <div class="cube-loader-container">
       <div class="action-rays"></div>
@@ -1706,9 +1711,12 @@ hexo.extend.injector.register('body_begin', `
       </div>
     </div>
   </div>
-`);
+`,
+);
 
-hexo.extend.injector.register('body_end', `
+hexo.extend.injector.register(
+  "body_end",
+  `
   <script>
     // === 🎵 全局点击播放功能 ===
     function initGlobalClickToPlay() {
@@ -1926,44 +1934,44 @@ hexo.extend.injector.register('body_end', `
                   <div class="earth-controls">
                       <div class="tooltip-container" onclick="window.focusLocation(34.05, -118.24, 'la')">
                           <span class="tooltip">Still continuing my work and life here...</span>
-                          <span class="text"> Los Angeles</span>
+                          <span class="text">🇺🇸 Los Angeles</span>
                           <span>🇺🇸</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(40.44, -79.99, 'pittsburgh')">
-                          <span class="tooltip">My graduate studies at CMU, challenging but rewarding, earned me a degree at the world-leading IS institution</span>
-                          <span class="text"> Pittsburgh</span>
-                          <span> 🇺🇸</span>
+                          <span class="tooltip">My graduate studies at CMU, challenging but rewarding, <br>earned me a degree at the world-leading IS institution</span>
+                          <span class="text">🇺🇸 Pittsburgh</span>
+                          <span>🇺🇸</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(40.65, -73.78, 'new york')">
-                          <span class="tooltip">The short but fulfilling internship & trip allowed me to appreciate the richness and diversity of the world.</span>
-                          <span class="text"> New York</span>
-                          <span> US</span>
+                          <span class="tooltip">The short but fulfilling internship & trip allowed me to <br>appreciate the richness and diversity of the world.</span>
+                          <span class="text">🇺🇸 New York</span>
+                          <span>🇺🇸</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(-37.80, 144.96, 'melbourne')">
-                          <span class="tooltip">Internships, studies, experiences. Even a corner of the world can be vibrant and colorful.</span>
-                          <span class="text"> Melbourne</span>
-                          <span> 🇦🇺</span>
+                          <span class="tooltip">Internships, studies, experiences. <br>Even a corner of the world can be vibrant and colorful.</span>
+                          <span class="text">🇦🇺 Melbourne</span>
+                          <span>🇦🇺</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(-34.93, 138.60, 'adelaide')">
-                          <span class="tooltip">My first experience living abroad: the beginning of my study abroad</span>
-                          <span class="text"> Adelaide</span>
-                          <span> 🇦🇺</span>
+                          <span class="tooltip">My first experience living abroad: <br>the beginning of my study abroad</span>
+                          <span class="text">🇦🇺 Adelaide</span>
+                          <span>🇦🇺</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(39.90, 116.40, 'beijing')">
-                          <span class="tooltip">Unforgettable, challenging yet fulfilling university life, wonderful memories.</span>
-                          <span class="text"> Beijing</span>
-                          <span> 🇨🇳</span>
+                          <span class="tooltip">Unforgettable, challenging yet fulfilling university life, <br>wonderful memories.</span>
+                          <span class="text">🇨🇳 Beijing</span>
+                          <span>🇨🇳</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(23.12, 113.26, 'guangzhou')">
                           <span class="tooltip">My sweet and familiar hometown</span>
-                          <span class="text"> Guangzhou</span>
-                          <span> 🇨🇳</span>
+                          <span class="text">🇨🇳 Guangzhou</span>
+                          <span>🇨🇳</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.resetView()">
@@ -2502,4 +2510,5 @@ hexo.extend.injector.register('body_end', `
     });
     observer.observe(document.body, { childList: true, subtree: true });
   </script>
-`);
+`,
+);
