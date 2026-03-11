@@ -137,6 +137,14 @@ layout: "about"
 
 ---
 
+## <i class="fa-solid fa-award"></i> Certifications & Awards
+
+- **CCNA & CCNP — Cisco Certified Network Associate / Professional**
+- **Patent:** System and Apparatus for Natural Disaster Public Sentiment Analysis (CN No. 4648515, 2022)
+- **Nomination:** The 38th CCF China Database Academic Conference (NDBC 2021)
+
+---
+
 ## <i class="fa-solid fa-diagram-project"></i> Key System Architecture
 
 ### Network Automation & Monitoring Platform (AS36678)
@@ -368,11 +376,3 @@ The system integrates **data crawling, NLP-driven modeling, and interactive geos
 - Implemented **circuit breaker mechanisms** to ensure system resilience.
 - Built **Kafka (publish-subscribe)** pipelines for asynchronous workflows such as email verification.
 - Enabled high scalability using **load balancers, security groups, health checks, and pod replication**.
-
----
-
-## <i class="fa-solid fa-award"></i> Certifications & Awards
-
-- **CCNA & CCNP — Cisco Certified Network Associate / Professional**
-- **Patent:** System and Apparatus for Natural Disaster Public Sentiment Analysis (CN No. 4648515, 2022)
-- **Nomination:** The 38th CCF China Database Academic Conference (NDBC 2021)

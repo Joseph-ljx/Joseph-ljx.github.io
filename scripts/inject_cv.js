@@ -2161,10 +2161,20 @@ hexo.extend.injector.register(
         socialContactsDiv.insertAdjacentHTML('beforebegin', hamsterHTML);
       }
     }
+    var cvInjectionTimer = null;
+    var CV_INJECTION_THROTTLE_MS = 600;
+    function throttledRunCVInjection() {
+        if (cvInjectionTimer) return;
+        cvInjectionTimer = setTimeout(function() {
+            cvInjectionTimer = null;
+            runCVInjection();
+        }, CV_INJECTION_THROTTLE_MS);
+    }
     var observer = new MutationObserver(function(mutations) {
-        runCVInjection();
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+        throttledRunCVInjection();
     });
-    
+
     // 启动监控
     observer.observe(document.body, { childList: true, subtree: true });
 
@@ -2186,7 +2196,7 @@ hexo.extend.injector.register(
     
     const CONFIG = {
         earthRadius: 10,
-        glowRadius: 10.3, 
+        glowRadius: 11.5, 
         rotateSpeed: 0.0005 
     };
 
@@ -2258,14 +2268,15 @@ hexo.extend.injector.register(
     }
 
     function createRealisticEarth() {
-        const geometry = new THREE.SphereGeometry(CONFIG.earthRadius, 64, 64);
+        const geometry = new THREE.SphereGeometry(CONFIG.earthRadius, 32, 32);
         const loader = new THREE.TextureLoader();
 
+        const base = 'https://cdn.jsdelivr.net/npm/three-globe@2.33.0/example/img/';
         const material = new THREE.MeshPhongMaterial({
-            map: loader.load('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'),
-            bumpMap: loader.load('https://unpkg.com/three-globe/example/img/earth-topology.png'),
+            map: loader.load(base + 'earth-blue-marble.jpg'),
+            bumpMap: loader.load(base + 'earth-topology.png'),
             bumpScale: 0.15,
-            specularMap: loader.load('https://unpkg.com/three-globe/example/img/earth-water.png'),
+            specularMap: loader.load(base + 'earth-water.png'),
             specular: new THREE.Color(0x333333),
             shininess: 15
         });
@@ -2290,7 +2301,7 @@ hexo.extend.injector.register(
             }
         \`;
 
-        const geometry = new THREE.SphereGeometry(CONFIG.glowRadius, 64, 64);
+        const geometry = new THREE.SphereGeometry(CONFIG.glowRadius, 32, 32);
         const material = new THREE.ShaderMaterial({
             vertexShader,
             fragmentShader,
@@ -2306,7 +2317,7 @@ hexo.extend.injector.register(
 
     function createStars() {
         const geometry = new THREE.BufferGeometry();
-        const count = 20000;
+        const count = 6000;
         const posArray = new Float32Array(count * 3);
         for(let i=0; i<count*3; i++) {
             posArray[i] = (Math.random() - 0.5) * 600; 
@@ -2314,7 +2325,7 @@ hexo.extend.injector.register(
         geometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
         
         const loader = new THREE.TextureLoader();
-        const starTexture = loader.load('https://threejs.org/examples/textures/sprites/disc.png');
+        const starTexture = loader.load('https://cdn.jsdelivr.net/npm/three@0.154.0/examples/textures/sprites/disc.png');
 
         const material = new THREE.PointsMaterial({
             size: 0.75,           
@@ -2503,10 +2514,18 @@ hexo.extend.injector.register(
         }
     }
     
-    const observer = new MutationObserver((mutations) => {
+    // 立即检查：若 scene-container 已存在（如 runCVInjection 先于本模块执行），直接初始化
+    function tryInitEarth() {
         if (document.getElementById('scene-container') && !document.getElementById('scene-container-canvas')) {
             initEarth3D();
         }
+    }
+    tryInitEarth();
+    // 若注入稍晚于本模块加载，延迟再试一次（如 runCVInjection 在 DOMContentLoaded 后插入容器）
+    setTimeout(tryInitEarth, 500);
+
+    const observer = new MutationObserver((mutations) => {
+        tryInitEarth();
     });
     observer.observe(document.body, { childList: true, subtree: true });
   </script>
