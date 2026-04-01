@@ -1,7 +1,7 @@
 ---
-title: 🎓 Bachelor of CS & DS - UQ
-date: 2019-02-11
-cover: /images/uq-linkedin.jpeg
+title: 🎓 Bachelor of Engineering
+date: 2017-09-01
+cover: /images/bupt-linkedin.png
 categories:
   - Education
 tags:
@@ -12,19 +12,19 @@ tags:
 
 <div class="job-header">
   <div class="job-meta">
-    <span><i class="fa-solid fa-location-dot"></i> Brisbane, Australia</span>
+    <span><i class="fa-solid fa-location-dot"></i> Beijing, China</span>
     <span class="separator">|</span>
-    <span><i class="fa-regular fa-calendar"></i> Feb 2019 – Dec 2022</span>
+    <span><i class="fa-regular fa-calendar"></i> Sep 2017 – Jun 2021</span>
   </div>
 </div>
 
 ### 🎓 Academic Performance
-* **GPA:** **3.88 / 4.0**
-* **Major:** Data Science
+* **GPA:** **3.85 / 4.0**
+* **Major:** Engineering
 
 ### 📚 Core Coursework
-* **Data Science Core:** Data Science, Statistical Modeling, Web Information Systems.
-* **Computer Science:** Advanced Database Systems, Computer Systems.
+* **Data Science Core:** Web Information Systems, Data Science, Statistical Modeling.
+* **Computer Science:** Advanced Database Systems, Computer Systems, Internet Protocols.
 
 <div class="wrapper-404">
   <div class="flash-overlay"></div>

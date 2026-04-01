@@ -1995,7 +1995,7 @@ hexo.extend.injector.register(
                       <div class="cv-desc">Focus: Search Engine, Software Engineering, Machine Learning in Production.</div>
                     </div>
                   </a>
-                  <a href="/2019/02/11/BCompSci-Data-Science-University-of-Queensland/" class="cv-card">
+                  <a href="/2017/09/01/BCompSci-Data-Science-University-of-Queensland/" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/BUPT.png" alt="BUPT">
                     </div>
@@ -2005,7 +2005,7 @@ hexo.extend.injector.register(
                       <div class="cv-desc">Focus: Algorithms, Database Managements, Statistics.</div>
                     </div>
                   </a>
-                  <a href="/2019/02/11/BCompSci-Data-Science-University-of-Queensland/" class="cv-card">
+                  <a href="/2017/09/01/BCompSci-Data-Science-University-of-Queensland/" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/QMUL.png" alt="QMUL">
                     </div>

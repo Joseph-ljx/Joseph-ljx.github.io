@@ -5,16 +5,16 @@ info:
   url: https://github.com/Joseph-ljx
 
 defaults:
-  favicon: /images/logo-mars.png
-  logo: /images/logo-mars.png
+  favicon: /images/logo_3.png
+  logo: /images/logo_3.png
   avatar: /images/avatar.png
 
 home_banner:
   enable: true
   style: fixed   
   image:
-    light: /images/background.png
-    dark: /images/background.png
+    light: /images/background_2.jpeg
+    dark: /images/background_2.jpeg
   title: Joseph Liao
   subtitle:
     text:
@@ -77,7 +77,11 @@ plugins:
               cover: /images/BGM.png
           
 inject:
-  enable: false
+  enable: true
+  head:
+    - <link rel="stylesheet" href="/css/nav-home-banner.css">
+  footer:
+    - <script defer src="/js/nav-home-banner.js"></script>
 
 comment:
   enable: false

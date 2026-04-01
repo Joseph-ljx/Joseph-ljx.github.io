@@ -1,5 +1,5 @@
 ---
-title: 🎓 Master of IS - CMU
+title: 🎓 Master of IS
 date: 2023-09-28
 cover: /images/cmu-linkedin.jpeg
 categories:
@@ -14,16 +14,16 @@ tags:
   <div class="job-meta">
     <span><i class="fa-solid fa-location-dot"></i> Pittsburgh, United States</span>
     <span class="separator">|</span>
-    <span><i class="fa-regular fa-calendar"></i> Sep 2023 – Dec 2024</span>
+    <span><i class="fa-regular fa-calendar"></i> Sep 2021 – Jun 2023</span>
   </div>
 </div>
 
 ### 🎓 Academic Performance
 * **GPA:** **3.8 / 4.0**
-* **Focus:** Data Science & Big Data, Machine Learning in Production, Distributed Systems.
+* **Focus:** Distributed Systems, Data Science & Big Data, Search Engine.
 
 ### 📚 Core Coursework
-* **AI & Machine Learning:** Machine Learning with Large Datasets, Intro to AI, A/B Testing, Machine Learning in Production.
+* **AI & Machine Learning:** Machine Learning with Large Datasets, Intro to AI, Machine Learning in Production.
 * **Systems & Engineering:** Distributed Systems, Algorithms & Data Structures, Database Management, Software Engineering.
 * **Business & Strategy:** Digital Transformation, Data Science & Big Data.
 

@@ -7,7 +7,7 @@ layout: "about"
 
 # Jianxiang(Joseph) Liao
 
-**Network Engineer** | **Automation Engineer** | **SDE** | **DevOps** | 📍 Dedicated passion and energy will tackle situations and bloom life | 📧 josephliao2023@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) | 🐙 [GitHub](https://github.com/Joseph-ljx)
+**Network Engineer** | **Automation Engineer** | **SDE** | **DevOps** |  📧 josephliao2023@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) | 🐙 [GitHub](https://github.com/Joseph-ljx) | 📍 Dedicated passion and energy will tackle situations and bloom life
 
 ---
 
