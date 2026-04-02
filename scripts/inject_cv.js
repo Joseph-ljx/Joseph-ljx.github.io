@@ -2002,7 +2002,7 @@ hexo.extend.injector.register(
                       <div class="cv-desc">Focus: Search Engine, Software Engineering, Machine Learning in Production.</div>
                     </div>
                   </a>
-                  <a href="/2017/09/01/BUPT/" class="cv-card">
+                  <a href="/2021/06/28/BUPT/" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/BUPT.png" alt="BUPT">
                     </div>
@@ -2012,7 +2012,7 @@ hexo.extend.injector.register(
                       <div class="cv-desc">Focus: Algorithms, Database Managements, Statistics.</div>
                     </div>
                   </a>
-                  <a href="/2017/09/01/QMUL/" class="cv-card">
+                  <a href="/2021/07/30/QMUL/" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/QMUL.png" alt="QMUL">
                     </div>
@@ -2086,14 +2086,14 @@ hexo.extend.injector.register(
                     </div>
                   </a>
 
-                  <a href="/2024/01/12/Recognition-Fault-Detection-System/" class="cv-card">
+                  <a href="/2023/01/15/Cloud-Microservices-Library-System/" class="cv-card">
                     <div class="cv-logo-box">
-                        <img src="/images/GE-Logo.png" alt="ge">
+                        <img src="/images/aws-logo.png" alt="aws">
                     </div>
                     <div class="cv-content-box">
-                      <div class="cv-card-header"><span class="cv-role">CMU & General Electric</span><span class="cv-time">Jan 2024 - May 2024</span></div>
-                      <div class="cv-card-subheader"><span class="cv-org">Data Scientist - Recognition and Fault Detection System Project</span></div>
-                      <div class="cv-desc">Built a real-time, production-oriented computer vision system integrating deep learning and streaming architectures to enhance industrial fault detection and operational reliability. </div>
+                      <div class="cv-card-header"><span class="cv-role">CMU & AWS</span><span class="cv-time">Jan 2024 - May 2024</span></div>
+                      <div class="cv-card-subheader"><span class="cv-org">Backend - Cloud Microservices Library System Project</span></div>
+                      <div class="cv-desc">A cloud-based microservices backend system deployed on AWS EKS that manages library data (books and customers), provides scalable REST APIs, implements Kafka-based asynchronous processing, JWT authentication, and resilience patterns like circuit breakers. </div>
                     </div>
                   </a>
 
