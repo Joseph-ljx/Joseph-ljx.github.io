@@ -2049,14 +2049,39 @@ hexo.extend.injector.register(
                 <div class="cv-section-title"><i class="fa-solid fa-code"></i> Selected Projects</div>
                 <div class="cv-grid">
                   
-                  <a href="/2024/08/19/Capstone-Emotion-Classification-with-LLMs/" class="cv-card">
+                  <a href="/2026/06/04/CTA-Portal-Blog/" class="cv-card">
                     <div class="cv-logo-box">
-                        <img src="/images/tcs.png" alt="tcs">
+                        <img src="/images/cta.png" alt="cta">
                     </div>
                     <div class="cv-content-box">
-                      <div class="cv-card-header"><span class="cv-role">CMU & Tata Consultancy Services</span><span class="cv-time">Aug 2024 - Dec 2024</span></div>
-                      <div class="cv-card-subheader"><span class="cv-org">Data Scientist - Emotion Classification with LLMs and NLP Models Capstone Project</span></div>
-                      <div class="cv-desc">Developed and deployed an end-to-end NLP solution leveraging transformer-based models to enable scalable emotion understanding and intelligent text classification in real-world applications. </div>
+                      <div class="cv-card-header">
+                        <span class="cv-role">China Telecom Americas</span>
+                        <span class="cv-time">Mar 2025 - Present</span>
+                      </div>
+                      <div class="cv-card-subheader">
+                        <span class="cv-org">AI Full-Stack Developer - NOC Operations Portal</span>
+                      </div>
+                      <div class="cv-desc">
+                        Designed and developed a production-grade Django web portal for NOC operations, centralizing circuit inventory, maintenance workflows, OTN alarm processing, vendor notifications, and real-time network monitoring into a unified internal platform.
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="/2024/06/01/DevAdmin/" class="cv-card">
+                    <div class="cv-logo-box">
+                      <img src="/images/cta.png" alt="cta">
+                    </div>
+                    <div class="cv-content-box">
+                      <div class="cv-card-header">
+                        <span class="cv-role">China Telecom Americas</span>
+                        <span class="cv-time">Jun 2024 - Present</span>
+                      </div>
+                      <div class="cv-card-subheader">
+                        <span class="cv-org">Network Automation Engineer - DevAdmin Monitoring Platform</span>
+                      </div>
+                      <div class="cv-desc">
+                        Designed and built DevAdmin, a full-stack network automation and monitoring platform for the AS36678 backbone network, enabling centralized multi-vendor device management, real-time interface/BGP/IS-IS/RPKI monitoring, SNMPv3 traffic analytics, automated configuration backups, and intelligent Exchange-based NOC alerting.
+                      </div>
                     </div>
                   </a>
 
