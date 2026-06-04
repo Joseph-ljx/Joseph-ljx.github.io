@@ -2012,7 +2012,7 @@ hexo.extend.injector.register(
                        <div class="cv-desc">Building AI and automation-driven backbone network operations platforms and NOC toolings, to centralize monitoring, accelerate all layers network troubleshooting, and scale infrastructure management.</div>
                      </div>
                   </a>
-                  <a href="/2025/05/26/AI-Data-Scientist-Intel/" class="cv-card">
+                  <a href="/2023/01/20/HMC/" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/hmc_logo.jpg" alt="hmc">
                     </div>

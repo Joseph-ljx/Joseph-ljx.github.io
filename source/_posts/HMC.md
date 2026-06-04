@@ -1,6 +1,6 @@
 ---
-title: 💼 AI Data Scientist @ Intel
-date: 2025-05-26
+title: 💼 AI Data Engineer @ HMC
+date: 2023-01-20
 cover: /images/newsroom-Intel-ARL-Chip-4-scaled.jpg
 # password: hello
 # message: "🤖 Password Required: Email ddl1208@icloud.com for 🔑"
@@ -12,7 +12,6 @@ tags:
   - Data Science
   - Machine Learning
   - Forecasting
-  - Supply Chain
 ---
 
 <style>
@@ -81,9 +80,9 @@ tags:
 
 <div class="job-header">
   <div class="job-meta">
-    <span><i class="fa-solid fa-location-dot"></i> Chengdu, China</span>
+    <span><i class="fa-solid fa-location-dot"></i> Pittsburgh, US</span>
     <span class="separator">|</span>
-    <span><i class="fa-regular fa-calendar"></i> May 2025 – Present</span>
+    <span><i class="fa-regular fa-calendar"></i> Jan 2023 – May 2023</span>
   </div>
 </div>
 
@@ -91,27 +90,33 @@ tags:
   <div class="cv-glass-card">
     <p class="cv-glass-title"><b>Problem and Work Scope</b></p>
     <p class="cv-glass-desc">
-      Intel’s global supply chain operates across multiple regions with heterogeneous demand patterns and long planning horizons Traditional rule-based forecasting and siloed planning processes limited responsiveness and scalability, motivating a <b>data-driven, ML-powered rearchitecture</b>.
+      Institutional investment research often requires analysts to collect hedge fund information from fragmented public sources such as SEC filings, IRS disclosures, and third-party datasets. The manual process was time-consuming, difficult to scale, and limited the efficiency of fund screening and due diligence activities.
+    </p>
+    <p class="cv-glass-desc">
+      My role was to design and develop a data intelligence platform that automated the ingestion, processing, storage, and retrieval of hedge fund data. The project involved building <b> ETL pipelines, designing data models, developing backend search services, and creating a centralized system</b> that enabled analysts to efficiently discover and analyze fund information across multiple data sources. Motivating a <b> data-driven, ML-powered rearchitecture.</b>
     </p>
   </div>
 </div>
 
 ---
 
+### 🚀 Hedge Fund Intelligence Platform
+* **Data Acquisition and Knowledge Discovery** Designed automated data ingestion pipelines to extract information from SEC EDGAR, IRS filings, and Kaggle datasets, processing over 1,200 hedge funds and related regulatory documents including ADV, 13F, and K-1 filings.
+
 ### 🚀 AI / ML Empowerment
-* **Capacity Planning Reengineering:** Leveraged multi-source data and AI/ML intelligent orchestration models to reengineer global capacity planning workflows.
+* **Capacity Planning Reengineering:** Leveraged multi-source data and AI/ML intelligent orchestration models to reengineer hedge fund's planning workflows.
 * **Strategic Validation:** Validated strategy effectiveness through rigorous **A/B testing**, ensuring data-driven decision-making.
 * **Decision Support Systems:** Delivered interactive **Power BI dashboards** and internal web tools to provide strategic visibility for executive leadership.
 
 ### 📈 ML-Driven Forecasting
-* **Multi-Model Framework:** Developed a robust forecasting framework integrating **SARIMAX, Prophet, and GBR** to enable long-term global capacity and demand planning.
+* **Multi-Model Framework:** Developed a robust forecasting framework integrating **SARIMAX, Prophet, and GBR** to enable long-term decision and demand planning.
 * **Advanced Segmentation:** Applied **Gaussian Mixture Models (GMM)** for regional segmentation combined with advanced feature engineering.
 * **Impact:** Successfully deployed models through an end-to-end **CI/CD ML pipeline** with auto-retraining capabilities, boosting forecast accuracy by **20%**.
 
 ### 🏗️ Scalable Data Architecture
 * **Distributed ETL Systems:** Designed and built scalable ETL pipelines using **Python, Azure Data Factory, and Databricks**.
 * **Big Data Processing:** Leveraged **Spark** for TB-scale data processing and **Airflow** for automated workflow orchestration.
-* **Digital Transformation:** drove the standardization and digital transformation of Intel’s global supply chain data infrastructure.
+* **Digital Transformation:** drove the standardization and digital transformation of HMC’s business decision infrastructure.
 
 
 <div class="skill-group">
