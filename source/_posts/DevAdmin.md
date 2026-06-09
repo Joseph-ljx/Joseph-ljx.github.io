@@ -1,7 +1,7 @@
 ---
-title: 🌐 DevAdmin — Network Automation & Monitoring Platform
+title: 🌐 Network Automation & Monitoring Platform @ CTA
 date: 2024-06-01
-cover: /images/DevAdmin_cover.png
+cover: /images/DevAdmin_bg.png
 categories:
   - Projects
 tags:
@@ -80,21 +80,24 @@ tags:
   <div class="cv-glass-card">
     <p class="cv-glass-title"><b>Problem and Work Scope</b></p>
     <p class="cv-glass-desc">
-      Managing a multi-vendor backbone network across <b>10+ data center cages and 100+ network devices</b> demands real-time visibility, rapid incident response, and repeatable operational workflows. Manual CLI-based monitoring does not scale. <b>DevAdmin</b> is a full-stack network automation and monitoring platform I designed and built from the ground up to solve this &mdash; providing <b>centralized device management, automated health monitoring, traffic analytics, configuration lifecycle management, and intelligent alerting</b> for the AS36678 backbone network.
+      Managing a multi-vendor backbone network across <b>10+ data center cages and 100+ network devices</b> demands real-time visibility, rapid incident response, and repeatable operational workflows. Manual CLI-based monitoring does not scale. 
+    </p>
+    <p class="cv-glass-desc">
+      <b>DevAdmin</b> is a full-stack network automation and monitoring platform I designed and built from the ground up to solve this &mdash; providing <b>centralized device management, automated health monitoring, traffic analytics, configuration lifecycle management, and intelligent alerting</b> for the AS36678 backbone network.
     </p>
   </div>
 </div>
 
 ---
 
-### Multi-Vendor Device Management
+### 🏗️ Multi-Vendor Device Management
 
 - **Unified Inventory:** Centralized device registry supporting **Cisco IOS/XE, IOS XR, NX-OS** and **Juniper Junos** with per-device metadata including location, model, series, connection protocol, and monitoring toggles.
 - **Encrypted Credentials:** All SSH/Telnet and SNMPv3 credentials are encrypted at the field level using **django-cryptography**, ensuring secrets are protected at rest in the database.
 - **Multi-Protocol Access:** Supports SSH, Telnet, SNMPv3, and gNMI connections per device with configurable timeouts and ports, adapting to heterogeneous network environments.
 - **Bulk Onboarding:** Excel-based bulk device import via **openpyxl** allows NOC teams to onboard entire PoPs in a single upload.
 
-### Real-Time Network Monitoring
+### 🔧 Real-Time Network Monitoring
 
 - **Interface Health Tracking:** Continuous monitoring of physical, protocol, and administrative interface states across all managed devices with automatic change detection and event logging.
 - **BGP Peer Monitoring:** Tracks BGP neighbor sessions including state, peer type (eBGP/iBGP), accepted prefix count, and session uptime &mdash; with alerts on peer state transitions.
@@ -103,7 +106,7 @@ tags:
 - **VLAN & MAC Tracking:** Layer 2 visibility through VLAN membership and MAC address table collection for switch environments.
 - **Device Reachability:** Scheduled ICMP-based reachability checks (**ping3**) with automatic status flagging and NOC email alerts on device down events.
 
-### Traffic Analytics & Telemetry
+### 📊 Traffic Analytics & Telemetry
 
 - **SNMPv3 Traffic Polling:** High-frequency interface counter collection (every 5 minutes) via **pysnmp** with SNMPv3 authentication and privacy, stored as raw traffic samples.
 - **Multi-Granularity Aggregation:** Automated aggregation pipeline compresses raw samples into **5-minute, 30-minute, 2-hour, and 1-day** time-series buckets for efficient long-term storage and dashboard rendering.
@@ -118,7 +121,7 @@ tags:
 - **Prefix List & ACL Management:** Automated customer prefix list and ACL generation, validation against IRR/ROA data, and push to edge routers with change verification.
 - **Bogon List Updates:** Daily automated bogon prefix list retrieval and device-level ACL updates to filter invalid routes.
 
-### Intelligent Alerting System
+### 🤖 Intelligent Alerting System
 
 - **State-Change Detection:** The backend engine maintains in-memory snapshots of the previous monitoring cycle and performs diff-based change detection &mdash; only true state transitions trigger alerts.
 - **14 Email Templates:** Purpose-built notification templates covering device down, interface flap, BGP peer loss, backbone circuit disruption, RPKI session failure, config change review, and more.

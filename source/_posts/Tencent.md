@@ -61,9 +61,9 @@ tags:
 
 <div class="job-header">
   <div class="job-meta">
-    <span><i class="fa-solid fa-location-dot"></i> Melbourne, Australia</span>
+    <span><i class="fa-solid fa-location-dot"></i> Shenzhen, China</span>
     <span class="separator">|</span>
-    <span><i class="fa-regular fa-calendar"></i> May 2022 – Aug 2022</span>
+    <span><i class="fa-regular fa-calendar"></i> Apr 2022 – Aug 2022</span>
   </div>
 </div>
 

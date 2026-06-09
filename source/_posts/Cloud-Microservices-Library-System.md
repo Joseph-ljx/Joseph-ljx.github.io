@@ -61,11 +61,10 @@ tags:
 </style>
 
 <div class="job-header">
-  <h2>Cloud-Native Microservices System</h2>
   <div class="job-meta">
     <span><i class="fa-solid fa-location-dot"></i> AWS Cloud</span>
     <span class="separator">|</span>
-    <span><i class="fa-regular fa-calendar"></i> 2023</span>
+    <span><i class="fa-regular fa-calendar"></i>Jan 2023 - May 2023</span>
   </div>
 </div>
 
@@ -82,42 +81,47 @@ tags:
 ---
 
 ### ☁️ Cloud Architecture & Microservices
-* Built a **distributed microservices system** deployed on AWS using **EKS (Kubernetes)** and Docker containers.
-* Designed multiple services including **Customer Service, Book Service, BFF layers, and CRM consumer**, ensuring modular and scalable architecture.
-* Implemented **health checks, load balancing, and replica-based scaling** for high availability.
+
+- Built a **distributed microservices system** deployed on AWS using **EKS (Kubernetes)** and Docker containers.
+- Designed multiple services including **Customer Service, Book Service, BFF layers, and CRM consumer**, ensuring modular and scalable architecture.
+- Implemented **health checks, load balancing, and replica-based scaling** for high availability.
 
 <div style="margin: 1.5rem 0; text-align: center;">
   <img src="/images/aws-project/aws-project-topology.png" style="max-width: 100%; border-radius: 12px;" />
 </div>
 
 ### ⚡ Backend Engineering & API Design
-* Developed **30+ RESTful APIs** supporting full CRUD operations with robust error handling (400, 404, 422, 500, 503, 504).
-* Implemented **BFF (Backend-for-Frontend) pattern** to tailor responses based on client device (mobile vs desktop).
-* Integrated **JWT authentication middleware** for secure, stateless service communication.
+
+- Developed **30+ RESTful APIs** supporting full CRUD operations with robust error handling (400, 404, 422, 500, 503, 504).
+- Implemented **BFF (Backend-for-Frontend) pattern** to tailor responses based on client device (mobile vs desktop).
+- Integrated **JWT authentication middleware** for secure, stateless service communication.
 
 ### 🔄 Distributed Systems & Messaging
-* Designed **Kafka-based asynchronous pipeline**:
-  * Customer service acts as producer
-  * CRM service consumes events and triggers email notifications
-* Enabled **event-driven architecture** to decouple services and improve system responsiveness.
+
+- Designed **Kafka-based asynchronous pipeline**:
+  - Customer service acts as producer
+  - CRM service consumes events and triggers email notifications
+- Enabled **event-driven architecture** to decouple services and improve system responsiveness.
 
 <div style="margin: 1.5rem 0; text-align: center;">
   <img src="/images/aws-project/aws-project-flow.png" style="max-width: 100%; border-radius: 12px;" />
 </div>
 
 ### 🛡️ Reliability & Resilience Engineering
-* Implemented **Circuit Breaker pattern**:
-  * Timeout protection (3s threshold)
-  * Automatic fail-fast (503) during outage windows
-  * Recovery logic with half-open state
-* Ensured **graceful degradation under external service failure**
+
+- Implemented **Circuit Breaker pattern**:
+  - Timeout protection (3s threshold)
+  - Automatic fail-fast (503) during outage windows
+  - Recovery logic with half-open state
+- Ensured **graceful degradation under external service failure**
 
 ### 🗄️ Data & Cloud Infrastructure
-* Integrated **MySQL (local) + AWS RDS (production)** with replication and load balancing.
-* Designed secure infrastructure using:
-  * VPC, subnets, security groups
-  * EC2 for management & operations
-* Simulated **ETL pipelines with 200+ test data entries**
+
+- Integrated **MySQL (local) + AWS RDS (production)** with replication and load balancing.
+- Designed secure infrastructure using:
+  - VPC, subnets, security groups
+  - EC2 for management & operations
+- Simulated **ETL pipelines with 200+ test data entries**
 
 <div style="margin: 1.5rem 0; text-align: center;">
   <img src="/images/aws-project/aws-project-vpc.png" style="max-width: 100%; border-radius: 12px;" />
