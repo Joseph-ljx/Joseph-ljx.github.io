@@ -8,7 +8,7 @@ layout: "about"
 # Jianxiang (Joseph) Liao
 
 **Network & Automation Engineer** | **Full Stack SDE** | **Data Engineer**
-📧 josephliao2023@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📍 Los Angeles, CA
+📧 jianxian2023@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📍 Los Angeles, CA
 
 ---
 
@@ -43,16 +43,16 @@ layout: "about"
 
 ## <i class="fa-solid fa-layer-group"></i> Technical Skills
 
-| Category | Skills |
-| :--- | :--- |
-| **Languages** | Python, Java, Golang, TypeScript / JavaScript, SQL |
-| **Backend & Frameworks** | Django, Spring Boot (SSM), Gin, React Native, RESTful API |
-| **Networking** | BGP, IGP, MPLS VPN, OTN, SDH, VLAN, SNMP, Firewall, OSI L1–L3 |
-| **Automation & DevOps** | Linux, Docker, Kubernetes (EKS), Netmiko, Nornir, TextFSM, Crontab, Jenkins, GitHub Actions |
-| **Data & ML** | Spark, Airflow, Kafka, SARIMAX, Prophet, GBR, GMM, Pandas, PyTorch |
-| **Databases** | PostgreSQL, MongoDB, Neo4j, Redis, AWS RDS |
-| **Cloud & Infrastructure** | AWS (EC2, EKS, RDS), Microsoft Azure, Azure Data Factory, Databricks |
-| **Observability** | Grafana, Prometheus, Power BI, Tableau |
+| Category                   | Skills                                                                                      |
+| :------------------------- | :------------------------------------------------------------------------------------------ |
+| **Languages**              | Python, Java, Golang, TypeScript / JavaScript, SQL                                          |
+| **Backend & Frameworks**   | Django, Spring Boot (SSM), Gin, React Native, RESTful API                                   |
+| **Networking**             | BGP, IGP, MPLS VPN, OTN, SDH, VLAN, SNMP, Firewall, OSI L1–L3                               |
+| **Automation & DevOps**    | Linux, Docker, Kubernetes (EKS), Netmiko, Nornir, TextFSM, Crontab, Jenkins, GitHub Actions |
+| **Data & ML**              | Spark, Airflow, Kafka, SARIMAX, Prophet, GBR, GMM, Pandas, PyTorch                          |
+| **Databases**              | PostgreSQL, MongoDB, Neo4j, Redis, AWS RDS                                                  |
+| **Cloud & Infrastructure** | AWS (EC2, EKS, RDS), Microsoft Azure, Azure Data Factory, Databricks                        |
+| **Observability**          | Grafana, Prometheus, Power BI, Tableau                                                      |
 
 ---
 
@@ -124,7 +124,7 @@ layout: "about"
 ## <i class="fa-solid fa-award"></i> Certifications & Awards
 
 - **CCNA & CCNP** — Cisco Certified Network Associate / Professional
-- **Patent:** System and Apparatus for Natural Disaster Public Sentiment Analysis — *China Invention Patent ZL 2020 1 1494854.1 (2022)*
+- **Patent:** System and Apparatus for Natural Disaster Public Sentiment Analysis — _China Invention Patent ZL 2020 1 1494854.1 (2022)_
 - **Nomination:** The 38th CCF China National Database Academic Conference (NDBC 2021)
 
 ---
