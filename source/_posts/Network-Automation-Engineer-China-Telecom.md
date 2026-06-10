@@ -1,75 +1,61 @@
 ---
-title: 💼 Network Engineer / Automation System Developer @ CTA
+title: 💼 Network & Automation Engineer @ China Telecom Americas
 date: 2023-08-20
 cover: /images/NE_3.png
 categories:
-  - Experience
+  - Work Experience
 tags:
   - Network Automation
   - Backbone Network
   - Django
   - NOC Platform
+  - Full Stack
 ---
 
 <style>
-  /* 容器 */
   .skill-group {
     margin-bottom: 2rem;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
-  
-  /* 标题 */
+
   .skill-title {
     margin-bottom: 1rem;
-    font-size: 1.25rem; /* text-xl */
-    font-weight: 700;   /* font-bold */
-    color: #333;        /* 适配亮色主题，如果是深色模式可以改 #fff */
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
   }
 
-  /* 列表布局 */
   .skill-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem; /* gap-2 */
+    gap: 0.5rem;
   }
 
-  /* 胶囊样式 */
   .skill-pill {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* gap-2 */
+    gap: 0.5rem;
     cursor: default;
-    border-radius: 9999px; /* rounded-full */
-    
-    /* 核心配色 (仿照你的截图) */
-    border: 1px solid #e5e5e5;  /* border-neutral-200 (亮色适配) */
-    background-color: #f5f5f5;  /* bg-neutral-100 */
-    color: #404040;             /* text-neutral-700 */
-    
-    /* 如果你希望强制黑色背景（如截图），请使用下面这组：
-    border: 1px solid #262626;
-    background-color: #171717; 
-    color: #d4d4d4; 
-    */
-
-    padding: 0.5rem 1rem; /* px-4 py-2 */
-    font-size: 0.875rem;  /* text-sm */
+    border-radius: 9999px;
+    border: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+    color: #404040;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
     transition: all 0.2s ease;
     line-height: 1;
   }
 
-  /* 悬停效果 (蓝色高亮) */
   .skill-pill:hover {
-    border-color: #3b82f6; /* hover:border-blue-500 */
-    color: #2563eb;        /* hover:text-blue-600 */
+    border-color: #3b82f6;
+    color: #2563eb;
     transform: translateY(-1px);
     background-color: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
 
-  /* SVG 图标尺寸 */
   .skill-icon {
-    height: 1rem; 
+    height: 1rem;
     width: 1rem;
     fill: currentColor;
   }
@@ -87,107 +73,51 @@ tags:
   <div class="cv-glass-card">
     <p class="cv-glass-title"><b>Problem and Work Scope</b></p>
     <p class="cv-glass-desc">
-      China Telecom Americas operates a multi-site backbone environment that requires reliable day-to-day operations, faster troubleshooting, and better visibility across devices, circuits, and physical infrastructure. I focused on combining <b>network engineering, automation, and platform development</b> to improve operational efficiency, centralize monitoring, and build scalable workflows for the AS36678 network.
+      China Telecom Americas operates a multi-site backbone environment — the <b>AS36678</b> network — spanning 10 US data center cages with 100+ routers, switches, and transport circuits. Day-to-day NOC operations were burdened by manual email triage for OTN alarms, disconnected spreadsheets for circuit tracking, ad-hoc vendor maintenance coordination, and no centralized visibility into infrastructure health.
+    </p>
+    <p class="cv-glass-desc">
+      My role combined <b>hands-on network engineering</b> (Layer 1–3 operations, incident response, routing assurance) with <b>full-stack platform development</b> — designing and building the production internal tooling that powers the NOC today: an automation engine, a circuit intelligence portal, and an AI-assisted operations layer that transforms how the team handles alarms, maintenance, and infrastructure management.
     </p>
   </div>
 </div>
 
 ---
 
-### 🌐 Network Operations Across AS36678
+### 🌐 Backbone Network Operations (AS36678)
 
-- **Backbone Operations:** Managed and operated Layer 1-3 infrastructure including **OTN, SDH, Ethernet, and IP/MPLS VPN** services across the **AS36678** backbone network.
-- **Incident Response:** Performed operational checks, troubleshooting, and service validation for routers, switches, transport links, and customer-facing circuits.
-- **Coverage:** Supported a distributed environment spanning **10 data center cages and 100+ network devices** across the United States.
+- **Layer 1–3 Infrastructure:** Operated and maintained **OTN, SDH, Ethernet, and IP/MPLS VPN** services across the AS36678 backbone, supporting CN2, 163, DWDM, Ciena, Peering, and IRU circuit types.
+- **Incident Response & Troubleshooting:** Performed service validation, fault isolation, and recovery across routers, switches, and transport links — spanning **10 US data center cages and 100+ backbone devices**.
+- **Routing Assurance:** Implemented **RPKI-based prefix validation** and automated routing health checks to detect anomalies and reduce BGP security risks.
+- **Python Network Automation:** Developed device automation scripts using **Netmiko / Nornir / TextFSM** for batch command execution, configuration push, and structured data extraction from multi-vendor CLI output.
 
-### 🤖 Automation Engineering For NOC Workflows
+### 🏗️ NOC Operations Portal — Full-Stack Platform Development
 
-- **Python Automation:** Developed automation scripts to configure devices, execute batch commands, perform health checks, and accelerate incident investigation.
-- **Scheduled Pipelines:** Built **Linux crontab + Python** workflows to parse vendor hotcut emails, generate structured reports, and trigger automated alerts for NOC teams.
-- **Routing Assurance:** Implemented **RPKI-based prefix validation** and automated operational checks to reduce routing risks and improve troubleshooting speed.
+Built a **production-grade Django web application** from scratch as the single source of truth for all network infrastructure, circuit inventory, and NOC operational workflows across CTA's US infrastructure.
 
-### 🏗️ Operations Platform Development
+- **Relational Data Model:** Architected a PostgreSQL schema covering multi-type circuits, data center infrastructure (cages, racks, devices, panels/ports), maintenance records, OTN alarm logs, vendor contacts, inventory, and UPS monitoring — with full audit trails via change logs.
+- **Operator UI:** Delivered a feature-rich admin interface using **Unfold** with filterable list views, bulk actions, Excel import/export (django-import-export), and role-based access control for NOC staff and administrators.
+- **REST API Layer:** Built Django REST Framework endpoints to expose task triggers and data feeds, enabling programmatic workflow control and external dashboard integration.
+- **Embedded Monitoring:** Integrated live **Grafana** metric dashboards and **Akvorado** NetFlow visualizations directly into the portal — giving NOC engineers unified traffic and circuit health visibility in one place.
 
-- **Centralized Platform:** Designed and implemented a monitoring and operations platform using **Django Admin + PostgreSQL** with RESTful APIs.
-- **Operational Visibility:** Delivered device and circuit inventory, rack and cage topology mapping, operational logs, and UPS **SNMP trap** monitoring in one place.
-- **Workflow Support:** Enabled collaboration across operations by tracking tasks, changes, and infrastructure status through a unified backend system.
+### 🤖 Intelligent Automation & Alarm Processing
 
-### 🧩 Key System Architecture
+- **OTN Alarm Engine:** Built a **Celery**-powered background worker that polls OTN alarm emails from CTG INMS (Beijing) every **5 minutes** via Microsoft Exchange — parsing multi-table HTML bodies with BeautifulSoup, updating circuit health states (outage / recovery), deduplicating by Exchange message-ID, and dispatching **reply-all HTML notifications** with enriched context. Eliminated manual email triage entirely.
+- **Vendor Maintenance Automation:** Integrated **Microsoft Exchange (exchangelib)** to auto-scan inbound vendor maintenance notifications, extract circuit IDs and maintenance windows, and create structured database records — replacing manual data entry.
+- **Scheduled Reporting:** Automated daily NOC environment health reports (cage temperature, UPS, rectifier) and weekly inventory alerts via **Celery Beat**, with formatted HTML delivery to stakeholders on schedule.
+- **Automation Pipelines:** Built **Linux crontab + Python** workflows to parse vendor hotcut emails, generate structured circuit impact reports, and trigger automated alert dispatch to NOC teams.
 
-#### Network Automation & Monitoring Platform (AS36678)
+### 📋 Operational Workflow Systems
 
-Designed and implemented an **automation and monitoring platform** to centrally manage network infrastructure across **10 data center cages and 100+ backbone devices** in the AS36678 network.  
-The system provides **topology visualization, configuration automation, alarm monitoring, and operational workflow management** for NOC teams.
+- **Maintenance Lifecycle Management:** Built a full-lifecycle internal ticketing system (Initiating → In Progress → Postponed → Rolled Back → Solved → Closed) with severity levels (Sev1–Sev3), multi-party assignments, before/after config snapshots, work progress logs, file attachments, and ZD/vendor ticket cross-referencing.
+- **Change Freeze Enforcement:** Developed moratorium period management with automated vendor notification emails, preventing unauthorized changes during critical blackout windows.
+- **Circuit State Tracking:** Implemented real-time circuit health state management across the full network inventory, with a strictly-monitored flag for high-value services enabling prioritized alerting.
+- **Asset & Inventory Management:** Delivered multi-category inventory tracking with stock thresholds, unit pricing, supplier links, and a purchase request workflow (Pending → Ordered → Received → Cancelled).
+- **Follow-Up Ticket System:** Built a lightweight tracking module for ongoing incidents and customer escalations, with circuit linkage, priority levels, file attachments, and external reference URLs.
 
-#### System Architecture
+### 🧠 AI-Assisted Network Intelligence
 
-<div style="display:flex; justify-content:center;">
-<pre>
-                      +-------------------------+
-                      |  Vendor Hotcut Emails   |
-                      +-----------+-------------+
-                                  |
-                                  v
-                      +-------------------------+
-                      |  Email Parsing Engine   |
-                      |  (Python Automation)    |
-                      +-----------+-------------+
-                                  |
-                                  v
-                      +-------------------------+
-                      |  Automation Framework   |
-                      |  (Crontab + Python)     |
-                      +-----------+-------------+
-                                  |
-                                  v
-+-----------------+     +------------------------+    +----------------+
-| Network Devices | ->  | Data Processing Layer  | -> |  PostgreSQL DB |
-| (Routers/Switch)|     | Netmiko / Nornir / API |    |  Asset Storage |
-+-----------------+     +------------------------+    +----------------+
-                                  |
-                                  v
-                      +------------------------+
-                      | Django Backend System  |
-                      | RESTful API Services   |
-                      +-----------+------------+
-                                  |
-                                  v
-                  +-------------------------------+
-                  | Web Admin / Monitoring Portal |
-                  | Topology / Logs / Alarms      |
-                  +-------------------------------+
-</pre>
-</div>
-
-#### Core Features
-
-- **Network Topology Monitoring:** Real-time visualization of data center cages, racks, device connections, and health status for interfaces, circuits, and routing sessions.
-- **Configuration Automation:** Batch command execution on network devices with **Netmiko / Nornir**, plus automated validation and operational checks.
-- **Alarm & Event Handling:** Device health monitoring via **SNMP traps**, circuit alerting, and automated notifications for NOC engineers.
-- **Asset & Operations Management:** Centralized inventory records, topology mapping, change logging, and workflow tracking for daily operations.
-
-#### Automation Pipeline
-
-<div style="display:flex; justify-content:center;">
-<pre>
-                Vendor Notification
-                        |
-                        v
-              Email Parser (Python)
-                        |
-                        v
-              Event Classification
-                        |
-                        v
-                Database Storage
-                        |
-                        v
-                  Alert System
-                        |
-                        v
-        NOC Dashboard / Email Notification
-</pre>
-</div>
+- **LLM Integration:** Embedded AI-assisted network analysis into the portal, enabling natural-language querying of network state, automated summarization of alarm patterns, and intelligent troubleshooting guidance for NOC engineers.
+- **Context-Aware Operations:** Combined real-time circuit inventory, alarm history, and topology data as LLM context — enabling the system to surface actionable insights rather than raw data.
 
 <div class="skill-group">
   <div class="skill-list">
@@ -212,8 +142,8 @@ The system provides **topology visualization, configuration automation, alarm mo
       Netmiko / Nornir
     </div>
     <div class="skill-pill">
-      <i class="fa-solid fa-arrows-rotate skill-icon"></i>
-      Crontab Automation
+      <i class="fa-solid fa-bolt skill-icon"></i>
+      Celery / Redis
     </div>
     <div class="skill-pill">
       <i class="fa-solid fa-bell skill-icon"></i>
@@ -221,7 +151,7 @@ The system provides **topology visualization, configuration automation, alarm mo
     </div>
     <div class="skill-pill">
       <i class="fa-solid fa-shield-halved skill-icon"></i>
-      RPKI Validation
+      RPKI / BGP
     </div>
     <div class="skill-pill">
       <i class="fa-solid fa-code-branch skill-icon"></i>
@@ -232,16 +162,28 @@ The system provides **topology visualization, configuration automation, alarm mo
       Linux
     </div>
     <div class="skill-pill">
-      <i class="fa-brands fa-linux skill-icon"></i>
-      Data Visulization
+      <i class="fa-solid fa-chart-area skill-icon"></i>
+      Grafana / Akvorado
     </div>
     <div class="skill-pill">
-      <i class="fa-brands fa-linux skill-icon"></i>
-      Claude AI
+      <i class="fa-solid fa-envelope skill-icon"></i>
+      Microsoft Exchange
     </div>
     <div class="skill-pill">
-      <i class="fa-brands fa-linux skill-icon"></i>
-      Cursor
+      <i class="fa-solid fa-robot skill-icon"></i>
+      LLM / AI Integration
+    </div>
+    <div class="skill-pill">
+      <i class="fa-solid fa-arrows-rotate skill-icon"></i>
+      Automation Pipelines
+    </div>
+    <div class="skill-pill">
+      <i class="fa-brands fa-docker skill-icon"></i>
+      Docker
+    </div>
+    <div class="skill-pill">
+      <i class="fa-solid fa-sitemap skill-icon"></i>
+      TextFSM
     </div>
   </div>
 </div>
