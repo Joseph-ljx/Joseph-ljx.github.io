@@ -1,5 +1,5 @@
 ---
-title: 💼 AI Data Engineer @ HMC
+title: 💻 AI Data Engineer @ HMC
 date: 2023-01-20
 cover: /images/HMC_bg.png
 # password: hello

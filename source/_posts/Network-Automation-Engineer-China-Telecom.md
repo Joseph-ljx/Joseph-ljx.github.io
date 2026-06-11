@@ -1,5 +1,5 @@
 ---
-title: 💼 Network & Automation Engineer @ China Telecom Americas
+title: 💻 Network & Automation Engineer @ CTA
 date: 2023-08-20
 cover: /images/NE_3.png
 categories:
