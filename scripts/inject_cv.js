@@ -2098,7 +2098,7 @@ hexo.extend.injector.register(
                     </div>
                   </a>
 
-                  <a href="/2023/06/05/Disaster-Monitor" class="cv-card">
+                  <a href="/2021/06/05/Disaster-Monitor" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/patent_logo.png" alt="disaster-monitor">
                     </div>
