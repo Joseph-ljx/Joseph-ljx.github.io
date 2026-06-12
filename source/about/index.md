@@ -1,5 +1,5 @@
 ---
-title: Resume
+# title: Resume
 date: 2026-01-01
 type: "about"
 layout: "about"
@@ -8,7 +8,7 @@ layout: "about"
 # Jianxiang (Joseph) Liao
 
 **Network & Automation Engineer** | **Full Stack SDE** | **Data Engineer**
-📧 jianxian2023@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📍 Los Angeles, CA
+📧 jianxian2023@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📄 <a href="/docs/Joseph%20Liao%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a> &nbsp;|&nbsp; 📍 Los Angeles, CA
 
 ---
 
