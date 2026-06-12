@@ -59,3 +59,8 @@ body:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .n
 body:not(.past-home-banner) .navbar-drawer-show .navbar-container .navbar-content.has-home-banner .navbar-bar .navbar-bar-middle {
   box-shadow: none;
 }
+
+/* Hide footer copyright line */
+.footer .info-container > div.text-center {
+  display: none;
+}
