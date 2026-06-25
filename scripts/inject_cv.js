@@ -2051,7 +2051,7 @@ hexo.extend.injector.register(
                 <div class="cv-section-title"><i class="fa-solid fa-code"></i> Selected Projects</div>
                 <div class="cv-grid">
                   
-                  <a href="/2026/06/04/CTA-Portal-Blog/" class="cv-card">
+                  <a href="/2026/01/20/CTA-Portal-Blog/" class="cv-card">
                     <div class="cv-logo-box">
                         <img src="/images/cta.png" alt="cta">
                     </div>
@@ -2069,7 +2069,7 @@ hexo.extend.injector.register(
                     </div>
                   </a>
 
-                  <a href="/2024/06/01/DevAdmin/" class="cv-card">
+                  <a href="/2025/06/01/DevAdmin/" class="cv-card">
                     <div class="cv-logo-box">
                       <img src="/images/cta.png" alt="cta">
                     </div>
