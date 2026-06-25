@@ -27,13 +27,13 @@ jobs:
     steps:
       # 下载代码至此VM
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: true
 
       # Use npm with env set up
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 20
           # Speed up npm process with cache
@@ -50,7 +50,7 @@ jobs:
       # Generate the built artifact in ./public
       # For deployment
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
