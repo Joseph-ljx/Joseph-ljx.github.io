@@ -2205,7 +2205,7 @@ hexo.extend.injector.register(
     const CONFIG = {
         earthRadius: 10,
         glowRadius: 11.5, 
-        rotateSpeed: 0.0005 
+        rotateSpeed: 0.0005
     };
 
     // 2. 初始化主函数
@@ -2222,7 +2222,7 @@ hexo.extend.injector.register(
         const width = container.clientWidth;
         const height = container.clientHeight;
         camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-        camera.position.set(0, 0, 32); 
+        camera.position.set(0, 0, 33); 
         
         // Renderer
         renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
