@@ -13,12 +13,12 @@ home_banner:
   enable: true
   style: fixed
   image:
-    light: /images/background_1.jpeg
-    dark: /images/background_1.jpeg
-  title: Joseph Liao
+    light: /images/background_4.png
+    dark: /images/background_4.png
+  title: :)
   subtitle:
     text:
-      - "Current Network & Automation Engieer @ CTA"
+      - "CurrentNetwork & Automation Engieer"
       - "Open to collaborations!"
   text_color:
     light: "#ffffff"
