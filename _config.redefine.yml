@@ -80,8 +80,11 @@ inject:
   enable: true
   head:
     - <link rel="stylesheet" href="/css/nav-home-banner.css">
+    - <link rel="stylesheet" href="/css/particles-background.css">
+    - <script src="/js/particles.min.js"></script>
   footer:
     - <script defer src="/js/nav-home-banner.js"></script>
+    - <script defer src="/js/particles-background.js"></script>
 
 comment:
   enable: false

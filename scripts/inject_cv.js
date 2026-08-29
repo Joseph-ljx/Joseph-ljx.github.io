@@ -1718,6 +1718,13 @@ hexo.extend.injector.register(
   "body_end",
   `
   <script>
+    // Optional playful decorations. Keep their implementations below so they
+    // can be restored without rewriting the home layout.
+    var HOME_DECORATIONS = {
+      centerStar: false,
+      hamster: false
+    };
+
     // 定义隐藏 Loader 的函数
     function hideLoader() {
         var loader = document.getElementById('loader-overlay');
@@ -2124,7 +2131,10 @@ hexo.extend.injector.register(
       var scrollBtn = document.querySelector('[onclick="scrollToMain()"]');      
       var bottomBar = scrollBtn ? scrollBtn.parentElement : null;      
       var rightSideElement = bottomBar ? bottomBar.lastElementChild : null;
-      if (bottomBar && rightSideElement && !bottomBar.querySelector('.center-preloader-box')) {
+      var existingCenterStar = bottomBar ? bottomBar.querySelector('.center-preloader-box') : null;
+      if (!HOME_DECORATIONS.centerStar && existingCenterStar) {
+          existingCenterStar.remove();
+      } else if (HOME_DECORATIONS.centerStar && bottomBar && rightSideElement && !existingCenterStar) {
           console.log("Preloader: Bottom bar found, injecting animation..."); //用于调试
           var preloaderHTML = \`
             <div class="center-preloader-box">
@@ -2138,13 +2148,16 @@ hexo.extend.injector.register(
             </div>
           \`;
           rightSideElement.insertAdjacentHTML('beforebegin', preloaderHTML);
-      } else {
+      } else if (HOME_DECORATIONS.centerStar && !bottomBar) {
           if(!bottomBar) console.log("Preloader Error: Could not find bottom bar container.");
       }
       
       // 注入仓鼠 
       var socialContactsDiv = document.querySelector('.social-contacts');
-      if (socialContactsDiv && !document.querySelector('.wheel-and-hamster')) {
+      var existingHamster = document.querySelector('.wheel-and-hamster');
+      if (!HOME_DECORATIONS.hamster && existingHamster) {
+        existingHamster.remove();
+      } else if (HOME_DECORATIONS.hamster && socialContactsDiv && !existingHamster) {
         console.log("Adding Hamster to the Left...");
         var hamsterHTML = \`
           <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
