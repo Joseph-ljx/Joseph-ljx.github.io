@@ -1923,13 +1923,13 @@ hexo.extend.injector.register(
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(40.44, -79.99, 'pittsburgh')">
-                          <span class="tooltip">My graduate studies at CMU, challenging but rewarding, <br>earned me a degree at the world-leading IS institution</span>
+                          <span class="tooltip">Challenging but rewarding graduate studies at CMU<br>earned me a world-leading IS institution degree</span>
                           <span class="text">Pittsburgh</span>
                           <span>US</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(40.65, -73.78, 'new york')">
-                          <span class="tooltip">The short but fulfilling internship & trip allowed me to <br>appreciate the richness and diversity of the world.</span>
+                          <span class="tooltip">The short but fulfilling internship & trip<br>appreciate the richness and diversity of the world.</span>
                           <span class="text">New York</span>
                           <span>US</span>
                       </div>
@@ -1941,19 +1941,19 @@ hexo.extend.injector.register(
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(-34.93, 138.60, 'adelaide')">
-                          <span class="tooltip">My first experience living abroad: <br>the beginning of my study abroad</span>
+                          <span class="tooltip">The first and the beginning of my study abroad</span>
                           <span class="text">Adelaide</span>
                           <span>AU</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(51.52, -0.04, 'london')">
-                          <span class="tooltip">Due to the weather, a place best for studying and working, I have to admit.</span>
+                          <span class="tooltip">Nobility is an attitude. </span>
                           <span class="text">London</span>
                           <span>UK</span>
                       </div>
 
                       <div class="tooltip-container" onclick="window.focusLocation(39.90, 116.40, 'beijing')">
-                          <span class="tooltip">Unforgettable, challenging yet fulfilling university life, <br>wonderful memories.</span>
+                          <span class="tooltip">Unforgettable, challenging yet fulfilling <br>my university life</span>
                           <span class="text">Beijing</span>
                           <span>China</span>
                       </div>
