@@ -593,11 +593,13 @@ hexo.extend.injector.register(
         gap: 12px; 
         padding-bottom: 15px;
         
-        /* 修改为白色，并增加阴影 */
-        color: #ffffff !important; 
-        text-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        /* 下划线改为半透明白 */
-        border-bottom: 2px solid rgba(255,255,255,0.3); 
+        /* White-version heading: graphite with a restrained blue undertone. */
+        color: #243142 !important;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.9), 0 8px 24px rgba(51,65,85,0.08);
+        border-bottom: 2px solid rgba(51,65,85,0.14);
+    }
+    .cv-section-title i {
+        color: #314c63 !important;
     }
     .cv-edu-section .cv-section-title {
         margin-top: 0 !important;

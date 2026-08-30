@@ -1,6 +1,6 @@
 (function () {
   var hostId = "particles-js";
-  var activePalette = "ice";
+  var activePalette = "white";
   var palettes = {
     default: {
       particles: ["#7dd3fc", "#c4b5fd", "#f8fafc"],
@@ -17,6 +17,10 @@
     violet: {
       particles: ["#c4b5fd", "#93c5fd", "#f5f3ff"],
       lines: "#b7a8ec"
+    },
+    white: {
+      particles: ["#0f172a", "#1e3a5f", "#075985"],
+      lines: "#334e63"
     }
   };
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -32,6 +36,7 @@
     }
 
     host.dataset.particlesPalette = activePalette;
+    document.body.dataset.particlesPalette = activePalette;
 
     return host;
   }
@@ -49,6 +54,7 @@
 
     var compact = window.matchMedia("(max-width: 767px)").matches;
     var palette = palettes[activePalette] || palettes.default;
+    var lightSurface = activePalette === "white";
 
     window.particlesJS(hostId, {
       particles: {
@@ -64,7 +70,7 @@
           image: { src: "", width: 100, height: 100 }
         },
         opacity: {
-          value: compact ? 0.54 : 0.5,
+          value: lightSurface ? (compact ? 0.62 : 0.52) : (compact ? 0.54 : 0.5),
           random: true,
           anim: { enable: false, speed: 0.8, opacity_min: 0.12, sync: false }
         },
@@ -77,7 +83,7 @@
           enable: true,
           distance: compact ? 125 : 155,
           color: palette.lines,
-          opacity: compact ? 0.3 : 0.27,
+          opacity: lightSurface ? (compact ? 0.32 : 0.24) : (compact ? 0.3 : 0.27),
           width: 1
         },
         move: {
