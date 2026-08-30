@@ -11,8 +11,8 @@
       lines: "#e3c88b"
     },
     ice: {
-      particles: ["#bae6fd", "#7dd3fc", "#f8fafc"],
-      lines: "#a5d8f3"
+      particles: ["#e0f2fe", "#bae6fd", "#f8fafc"],
+      lines: "#c7e7f7"
     },
     violet: {
       particles: ["#c4b5fd", "#93c5fd", "#f5f3ff"],
@@ -53,8 +53,8 @@
     window.particlesJS(hostId, {
       particles: {
         number: {
-          value: compact ? 42 : 76,
-          density: { enable: true, value_area: compact ? 760 : 920 }
+          value: compact ? 48 : 82,
+          density: { enable: true, value_area: compact ? 640 : 900 }
         },
         color: { value: palette.particles },
         shape: {
@@ -64,12 +64,12 @@
           image: { src: "", width: 100, height: 100 }
         },
         opacity: {
-          value: 0.42,
+          value: compact ? 0.54 : 0.5,
           random: true,
           anim: { enable: false, speed: 0.8, opacity_min: 0.12, sync: false }
         },
         size: {
-          value: compact ? 2.2 : 2.6,
+          value: compact ? 2.35 : 2.7,
           random: true,
           anim: { enable: false, speed: 10, size_min: 0.2, sync: false }
         },
@@ -77,7 +77,7 @@
           enable: true,
           distance: compact ? 125 : 155,
           color: palette.lines,
-          opacity: 0.22,
+          opacity: compact ? 0.3 : 0.27,
           width: 1
         },
         move: {
