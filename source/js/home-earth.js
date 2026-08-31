@@ -329,7 +329,7 @@ export function initHomeEarth() {
   if (window.innerWidth > 768) {
     earthGroup.position.x = -1;
   } else {
-    earthGroup.position.y = -6;
+    earthGroup.position.y = -2;
   }
   scene.add(earthGroup);
 
