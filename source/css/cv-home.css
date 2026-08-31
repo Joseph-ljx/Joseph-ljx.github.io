@@ -1168,6 +1168,9 @@ a[data-category="separator"] {
 }
 @media (max-width: 768px) {
     .earth-stage {
+        display: grid;
+        grid-template-rows: 150px clamp(420px, 56svh, 560px) auto auto;
+        grid-template-columns: minmax(0, 1fr);
         height: auto !important;
         margin-top: 28px !important;
         margin-bottom: 36px;
@@ -1175,7 +1178,8 @@ a[data-category="separator"] {
 
     .mobile-earth-current {
         display: block;
-        margin: 0 4px 18px;
+        align-self: start;
+        margin: 0 4px;
         padding: 18px 18px 16px;
         border: 1px solid rgba(51, 65, 85, 0.12);
         border-radius: 18px;
@@ -1203,6 +1207,17 @@ a[data-category="separator"] {
         line-height: 1.55;
     }
 
+    #mobile-earth-location,
+    #mobile-earth-description {
+        transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .mobile-earth-current.is-updating #mobile-earth-location,
+    .mobile-earth-current.is-updating #mobile-earth-description {
+        opacity: 0;
+        transform: translateY(3px);
+    }
+
     .mobile-orbit-button {
         display: inline-flex;
         align-items: center;
@@ -1224,7 +1239,7 @@ a[data-category="separator"] {
         position: relative !important;
         top: auto !important;
         left: auto !important;
-        height: 56svh !important;
+        height: 100% !important;
         min-height: 420px;
         max-height: 560px;
     }
