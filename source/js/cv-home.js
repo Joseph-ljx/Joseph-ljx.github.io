@@ -39,6 +39,30 @@ function destroyHomeEarth() {
   }
 }
 
+var mobileEarthCopyTimer = null;
+
+function updateMobileEarthCopy(locationText, descriptionText) {
+  var card = document.querySelector('.mobile-earth-current');
+  var currentLocation = document.getElementById('mobile-earth-location');
+  var currentDescription = document.getElementById('mobile-earth-description');
+
+  if (!card || !currentLocation || !currentDescription) {
+    return;
+  }
+
+  if (mobileEarthCopyTimer) {
+    clearTimeout(mobileEarthCopyTimer);
+  }
+
+  card.classList.add('is-updating');
+  mobileEarthCopyTimer = setTimeout(function() {
+    currentLocation.textContent = locationText;
+    currentDescription.textContent = descriptionText;
+    card.classList.remove('is-updating');
+    mobileEarthCopyTimer = null;
+  }, 120);
+}
+
 window.selectEarthLocation = function(control, lat, lon, id) {
   document.querySelectorAll('.earth-controls .tooltip-container').forEach(function(item) {
     item.classList.toggle('is-active', item === control);
@@ -47,17 +71,15 @@ window.selectEarthLocation = function(control, lat, lon, id) {
   var name = control.querySelector('.text');
   var country = control.querySelector('.location-country');
   var description = control.querySelector('.tooltip');
-  var currentLocation = document.getElementById('mobile-earth-location');
-  var currentDescription = document.getElementById('mobile-earth-description');
-
-  if (currentLocation && name && country) {
-    currentLocation.textContent = name.textContent.trim() + ' · ' + country.textContent.trim();
-  }
-
-  if (currentDescription && description) {
-    currentDescription.textContent = Array.from(description.childNodes).map(function(node) {
+  if (name && country && description) {
+    var descriptionText = Array.from(description.childNodes).map(function(node) {
       return node.nodeName === 'BR' ? ' ' : node.textContent;
     }).join('').trim().replace(/\s+/g, ' ');
+
+    updateMobileEarthCopy(
+      name.textContent.trim() + ' · ' + country.textContent.trim(),
+      descriptionText
+    );
   }
 
   if (typeof window.focusLocation === 'function') {
@@ -70,16 +92,7 @@ window.resetEarthExperience = function() {
     item.classList.remove('is-active');
   });
 
-  var currentLocation = document.getElementById('mobile-earth-location');
-  var currentDescription = document.getElementById('mobile-earth-description');
-
-  if (currentLocation) {
-    currentLocation.textContent = 'ORBIT VIEW';
-  }
-
-  if (currentDescription) {
-    currentDescription.textContent = 'Explore the places that shaped my journey.';
-  }
+  updateMobileEarthCopy('ORBIT VIEW', 'Explore the places that shaped my journey.');
 
   if (typeof window.resetView === 'function') {
     window.resetView();
