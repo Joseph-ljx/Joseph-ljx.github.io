@@ -1131,27 +1131,29 @@ a[data-category="separator"] {
   transform: translate(-50%) rotate(45deg);
   background: var(--color);
 }
-.tooltip-container:hover .tooltip {
-  top: -120%; 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  scale: 1;
-  animation: shake 0.5s ease-in-out both;
-}
-.tooltip-container:hover {
-  box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
-  border-color: transparent;
-}
-.tooltip-container:hover span:last-child {
-  transform: scale(1);
-  left: 0;
-}
-.tooltip-container:hover .text {
-  opacity: 0;
-  top: 0%;
-  left: 100%;
-  transform: scale(0);
+@media (hover: hover) and (pointer: fine) {
+  .tooltip-container:hover .tooltip {
+    top: -120%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    scale: 1;
+    animation: shake 0.5s ease-in-out both;
+  }
+  .tooltip-container:hover {
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    border-color: transparent;
+  }
+  .tooltip-container:hover span:last-child {
+    transform: scale(1);
+    left: 0;
+  }
+  .tooltip-container:hover .text {
+    opacity: 0;
+    top: 0%;
+    left: 100%;
+    transform: scale(0);
+  }
 }
 @keyframes shake {
   0% { rotate: 0; }
@@ -1168,6 +1170,7 @@ a[data-category="separator"] {
     .earth-stage {
         height: auto !important;
         margin-top: 28px !important;
+        margin-bottom: 36px;
     }
 
     .mobile-earth-current {
@@ -1276,10 +1279,12 @@ a[data-category="separator"] {
         box-shadow: 0 5px 16px rgba(15, 23, 42, 0.06);
     }
 
-    .tooltip-container .tooltip,
-    .tooltip-container .location-country,
+    .earth-controls .tooltip-container .tooltip,
+    .earth-controls .tooltip-container:hover .tooltip,
+    .earth-controls .tooltip-container .location-country,
+    .earth-controls .tooltip-container:hover .location-country,
     .earth-controls .orbit-control {
-        display: none;
+        display: none !important;
     }
 
     .tooltip-container .text,
