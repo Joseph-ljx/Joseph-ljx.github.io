@@ -39,6 +39,53 @@ function destroyHomeEarth() {
   }
 }
 
+window.selectEarthLocation = function(control, lat, lon, id) {
+  document.querySelectorAll('.earth-controls .tooltip-container').forEach(function(item) {
+    item.classList.toggle('is-active', item === control);
+  });
+
+  var name = control.querySelector('.text');
+  var country = control.querySelector('.location-country');
+  var description = control.querySelector('.tooltip');
+  var currentLocation = document.getElementById('mobile-earth-location');
+  var currentDescription = document.getElementById('mobile-earth-description');
+
+  if (currentLocation && name && country) {
+    currentLocation.textContent = name.textContent.trim() + ' · ' + country.textContent.trim();
+  }
+
+  if (currentDescription && description) {
+    currentDescription.textContent = Array.from(description.childNodes).map(function(node) {
+      return node.nodeName === 'BR' ? ' ' : node.textContent;
+    }).join('').trim().replace(/\s+/g, ' ');
+  }
+
+  if (typeof window.focusLocation === 'function') {
+    window.focusLocation(lat, lon, id);
+  }
+};
+
+window.resetEarthExperience = function() {
+  document.querySelectorAll('.earth-controls .tooltip-container').forEach(function(item) {
+    item.classList.remove('is-active');
+  });
+
+  var currentLocation = document.getElementById('mobile-earth-location');
+  var currentDescription = document.getElementById('mobile-earth-description');
+
+  if (currentLocation) {
+    currentLocation.textContent = 'ORBIT VIEW';
+  }
+
+  if (currentDescription) {
+    currentDescription.textContent = 'Explore the places that shaped my journey.';
+  }
+
+  if (typeof window.resetView === 'function') {
+    window.resetView();
+  }
+};
+
 // 定义隐藏 Loader 的函数
 function hideLoader() {
     var loader = document.getElementById('loader-overlay');
@@ -111,18 +158,6 @@ function runCVInjection() {
           sideCard.parentNode.insertBefore(wrapperDiv, sideCard);
           wrapperDiv.appendChild(sideCard);
       }
-      var avatarContainer = sideCard.querySelector('.avatar');
-      
-      if (avatarContainer) {
-          var img = avatarContainer.querySelector('img');
-          var currentSrc = img ? img.getAttribute('src') : '';
-          
-          if (!img || !currentSrc.includes('avatar.png')) {
-              console.log("正在重写头像 HTML...");
-              avatarContainer.innerHTML = '<img src="/images/avatar.png?v=' + new Date().getTime() + '" style="opacity: 1 !important; display: block !important;">';
-          }
-      }
-
       // 插入 Bio
       if (!sideCard.querySelector('.cv-sidebar-bio')) {
           var bioHTML = `
@@ -228,59 +263,72 @@ function runCVInjection() {
         <div class="cv-home-sections">
 
           <!-- 3D Earth Container Hook -->
-          <div style="position: relative; width: 100%; height: 100vh; margin-top: 50px;">
+          <div class="earth-stage" style="position: relative; width: 100%; height: 100vh; margin-top: 50px;">
+              <div class="mobile-earth-current" aria-live="polite">
+                  <div class="mobile-earth-current-header">
+                      <span id="mobile-earth-location">LOS ANGELES · US</span>
+                      <button type="button" class="mobile-orbit-button" onclick="window.resetEarthExperience()" aria-label="Reset Earth to orbit view">
+                          <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                          Orbit
+                      </button>
+                  </div>
+                  <p id="mobile-earth-description">Still continuing my work and life here...</p>
+              </div>
+
               <div id="scene-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0;"></div>
-              
+
+              <div class="mobile-earth-explore">Explore My Journey</div>
+
               <div class="earth-controls">
-                  <div class="tooltip-container" onclick="window.focusLocation(34.05, -118.24, 'la')">
+                  <div class="tooltip-container is-active" onclick="window.selectEarthLocation(this, 34.05, -118.24, 'la')">
                       <span class="tooltip">Still continuing my work and life here...</span>
                       <span class="text"> Los Angeles</span>
-                      <span>US</span>
+                      <span class="location-country">US</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(40.44, -79.99, 'pittsburgh')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, 40.44, -79.99, 'pittsburgh')">
                       <span class="tooltip">Challenging but rewarding graduate studies at CMU<br>earned me a world-leading IS institution degree</span>
                       <span class="text">Pittsburgh</span>
-                      <span>US</span>
+                      <span class="location-country">US</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(40.65, -73.78, 'new york')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, 40.65, -73.78, 'new york')">
                       <span class="tooltip">The short but fulfilling internship & trip<br>appreciate the richness and diversity of the world.</span>
                       <span class="text">New York</span>
-                      <span>US</span>
+                      <span class="location-country">US</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(-37.80, 144.96, 'melbourne')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, -37.80, 144.96, 'melbourne')">
                       <span class="tooltip">Internships, studies, experiences. <br>Even a corner of the world can be vibrant and colorful.</span>
                       <span class="text">Melbourne</span>
-                      <span>AU</span>
+                      <span class="location-country">AU</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(-34.93, 138.60, 'adelaide')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, -34.93, 138.60, 'adelaide')">
                       <span class="tooltip">The first and the beginning of my study abroad</span>
                       <span class="text">Adelaide</span>
-                      <span>AU</span>
+                      <span class="location-country">AU</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(51.52, -0.04, 'london')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, 51.52, -0.04, 'london')">
                       <span class="tooltip">Nobility is an attitude. </span>
                       <span class="text">London</span>
-                      <span>UK</span>
+                      <span class="location-country">UK</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(39.90, 116.40, 'beijing')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, 39.90, 116.40, 'beijing')">
                       <span class="tooltip">Unforgettable, challenging yet fulfilling <br>my university life</span>
                       <span class="text">Beijing</span>
-                      <span>China</span>
+                      <span class="location-country">China</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.focusLocation(23.12, 113.26, 'guangzhou')">
+                  <div class="tooltip-container" onclick="window.selectEarthLocation(this, 23.12, 113.26, 'guangzhou')">
                       <span class="tooltip">My sweet and familiar hometown</span>
                       <span class="text">Guangzhou</span>
-                      <span>China</span>
+                      <span class="location-country">China</span>
                   </div>
 
-                  <div class="tooltip-container" onclick="window.resetView()">
+                  <div class="tooltip-container orbit-control" onclick="window.resetEarthExperience()">
                       <span class="tooltip">Reset View</span>
                       <span class="text">Orbit View</span>
                       <span><i class="fa-solid fa-satellite"></i></span>

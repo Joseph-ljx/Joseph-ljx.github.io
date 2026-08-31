@@ -1021,6 +1021,11 @@ a[data-category="separator"] {
 
 
 /* === 地球控制按钮组 === */
+.mobile-earth-current,
+.mobile-earth-explore {
+    display: none;
+}
+
 .earth-controls {
     position: absolute;
     top: 50%;
@@ -1160,21 +1165,142 @@ a[data-category="separator"] {
     to { opacity: 1; transform: translate(0, -50%); }
 }
 @media (max-width: 768px) {
+    .earth-stage {
+        height: auto !important;
+        margin-top: 28px !important;
+    }
+
+    .mobile-earth-current {
+        display: block;
+        margin: 0 4px 18px;
+        padding: 18px 18px 16px;
+        border: 1px solid rgba(51, 65, 85, 0.12);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .mobile-earth-current-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        color: #243142;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+    }
+
+    .mobile-earth-current p {
+        margin: 9px 0 0;
+        color: #5f6b7a;
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .mobile-orbit-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        flex: 0 0 auto;
+        min-height: 36px;
+        padding: 7px 12px;
+        border: 1px solid rgba(51, 65, 85, 0.14);
+        border-radius: 999px;
+        background: #f8fafc;
+        color: #334155;
+        font: inherit;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+    }
+
+    #scene-container {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        height: 56svh !important;
+        min-height: 420px;
+        max-height: 560px;
+    }
+
+    .mobile-earth-explore {
+        display: block;
+        margin: 22px 4px 4px;
+        color: #243142;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+    }
+
     .earth-controls {
+        position: relative;
         top: auto;
-        bottom: 30px;
-        right: 0;
-        left: 0;
+        bottom: auto;
+        right: auto;
+        left: auto;
         transform: none;
         flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 10px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+        padding: 4px 4px 14px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        opacity: 1;
+        animation: none;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
     }
+
+    .earth-controls::-webkit-scrollbar {
+        display: none;
+    }
+
     .tooltip-container {
-        width: 140px;  
-        height: 45px;
-        font-size: 14px;
+        flex: 0 0 auto;
+        width: auto;
+        min-width: 124px;
+        height: 42px;
+        padding: 0 18px;
+        border-color: rgba(51, 65, 85, 0.12);
+        background: rgba(255, 255, 255, 0.86) !important;
+        color: #475569;
+        font-size: 13px;
+        scroll-snap-align: start;
+        box-shadow: 0 5px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    .tooltip-container .tooltip,
+    .tooltip-container .location-country,
+    .earth-controls .orbit-control {
+        display: none;
+    }
+
+    .tooltip-container .text,
+    .tooltip-container:hover .text {
+        position: static;
+        width: auto;
+        height: auto;
+        opacity: 1;
+        transform: none;
+    }
+
+    .tooltip-container:hover {
+        border-color: rgba(51, 65, 85, 0.12);
+        box-shadow: 0 5px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    .tooltip-container.is-active {
+        border-color: #334e63;
+        background: #334e63 !important;
+        color: #ffffff;
+        box-shadow: 0 8px 20px rgba(51, 78, 99, 0.22);
     }
 }
 
@@ -1645,4 +1771,3 @@ a[data-category="separator"] {
   pointer-events: none;
   animation: action-lines 0.5s ease-out forwards;
 }
-
