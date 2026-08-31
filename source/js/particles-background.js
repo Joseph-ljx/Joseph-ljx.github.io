@@ -24,6 +24,11 @@
     }
   };
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var particlesLibraryPromise = null;
+
+  function hasHomeBanner() {
+    return Boolean(document.querySelector("#swup .home-banner-background"));
+  }
 
   function ensureHost() {
     var host = document.getElementById(hostId);
@@ -41,14 +46,36 @@
     return host;
   }
 
-  function initParticles() {
-    var host = ensureHost();
+  function loadParticlesLibrary() {
+    if (typeof window.particlesJS === "function") {
+      return Promise.resolve();
+    }
 
+    if (!particlesLibraryPromise) {
+      particlesLibraryPromise = new Promise(function (resolve, reject) {
+        var script = document.createElement("script");
+        script.src = "/js/particles.min.js";
+        script.dataset.particlesLibrary = "true";
+        script.addEventListener("load", resolve, { once: true });
+        script.addEventListener("error", reject, { once: true });
+        document.head.appendChild(script);
+      });
+    }
+
+    return particlesLibraryPromise;
+  }
+
+  function initParticles() {
     if (
-      host.dataset.particlesReady === "true" ||
       reducedMotion.matches ||
       typeof window.particlesJS !== "function"
     ) {
+      return;
+    }
+
+    var host = ensureHost();
+
+    if (host.dataset.particlesReady === "true") {
       return;
     }
 
@@ -118,12 +145,53 @@
     host.dataset.particlesReady = "true";
   }
 
+  function destroyParticles() {
+    var host = document.getElementById(hostId);
+
+    if (!host) {
+      return;
+    }
+
+    if (Array.isArray(window.pJSDom)) {
+      window.pJSDom.slice().forEach(function (entry) {
+        var destroy = entry && entry.pJS && entry.pJS.fn && entry.pJS.fn.vendors
+          ? entry.pJS.fn.vendors.destroypJS
+          : null;
+
+        if (typeof destroy === "function") {
+          destroy();
+        }
+      });
+      window.pJSDom = [];
+    }
+
+    host.querySelectorAll("canvas").forEach(function (canvas) {
+      canvas.remove();
+    });
+    host.remove();
+  }
+
   function syncVisibility() {
-    initParticles();
-    document.body.classList.toggle(
-      "particles-background-active",
-      Boolean(document.querySelector("#swup .home-banner-background"))
-    );
+    var active = hasHomeBanner() && !document.hidden;
+
+    document.body.classList.toggle("particles-background-active", active);
+
+    if (active) {
+      if (reducedMotion.matches) {
+        ensureHost();
+        return;
+      }
+
+      loadParticlesLibrary().then(function () {
+        if (hasHomeBanner() && !document.hidden) {
+          initParticles();
+        }
+      }).catch(function (error) {
+        console.error("Unable to load the particles background.", error);
+      });
+    } else {
+      destroyParticles();
+    }
   }
 
   function bindSwup(swup) {
@@ -142,6 +210,7 @@
     window.addEventListener("redefine:swup:ready", function (event) {
       bindSwup(event.detail && event.detail.swup);
     });
+    document.addEventListener("visibilitychange", syncVisibility);
   }
 
   bindSwup(window.swup);
