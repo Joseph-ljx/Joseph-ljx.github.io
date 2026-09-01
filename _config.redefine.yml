@@ -81,9 +81,11 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/nav-home-banner.css">
     - <link rel="stylesheet" href="/css/particles-background.css">
+    - <link rel="stylesheet" href="/css/toc-performance.css">
   footer:
     - <script defer src="/js/nav-home-banner.js"></script>
     - <script defer src="/js/particles-background.js"></script>
+    - <script defer src="/js/toc-performance.js"></script>
 
 comment:
   enable: false

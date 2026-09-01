@@ -1,0 +1,25 @@
+/* Keep TOC highlighting cheap while the page scroll position changes. */
+.post-toc-wrap {
+  contain: layout paint style;
+}
+
+.post-toc .nav-item,
+.post-toc .nav-link,
+.post-toc .nav-number,
+.post-toc .nav-text {
+  transition-property: color, opacity !important;
+}
+
+/* Avoid animating every intermediate TOC highlight during a short jump. */
+.toc-scroll-active .post-toc *,
+.toc-scroll-active .toc-content-container {
+  transition-duration: 0.01ms !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-toc *,
+  .toc-content-container {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
