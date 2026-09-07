@@ -22,8 +22,10 @@
     }
   }
 
-  function easeOutQuint(progress) {
-    return 1 - Math.pow(1 - progress, 5);
+  function easeInOutCubic(progress) {
+    return progress < 0.5
+      ? 4 * progress * progress * progress
+      : 1 - Math.pow(-2 * progress + 2, 3) / 2;
   }
 
   function cancelActiveScroll() {
@@ -36,8 +38,8 @@
   }
 
   function getScrollDuration(distance) {
-    // Nearby headings feel immediate; long jumps remain deliberately brief.
-    return Math.round(Math.min(340, Math.max(240, 220 + distance * 0.04)));
+    // Preserve a visible glide without letting long article jumps feel slow.
+    return Math.round(Math.min(620, Math.max(420, 390 + distance * 0.08)));
   }
 
   function scrollToTarget(target) {
@@ -66,7 +68,7 @@
       }
 
       var progress = Math.min(1, (now - startedAt) / duration);
-      var nextY = startY + (targetY - startY) * easeOutQuint(progress);
+      var nextY = startY + (targetY - startY) * easeInOutCubic(progress);
       window.scrollTo(0, nextY);
 
       if (progress < 1) {
