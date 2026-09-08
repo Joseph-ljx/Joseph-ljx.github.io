@@ -2,7 +2,7 @@
 .home-article-title > a:has(> .post-type-icon),
 .archive-list-container .article-title:has(> .post-type-icon) {
   display: inline-flex !important;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -13,7 +13,6 @@
   color: currentColor;
   opacity: 0.78;
   overflow: visible;
-  margin-top: 0.12em;
 }
 
 .article-title-cover.post-type-title,
