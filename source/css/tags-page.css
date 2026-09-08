@@ -1,0 +1,21 @@
+/* Scale tag labels by post count while preserving Redefine's blur-card style. */
+.page-container .tagcloud-content .tag-list li a[data-weight] {
+  font-size: 1.55rem;
+}
+
+.page-container .tagcloud-content .tag-list li a[data-weight="1"] {
+  font-size: 1.1rem;
+}
+
+.page-container .tagcloud-content .tag-list li a[data-weight="2"] {
+  font-size: 1.25rem;
+}
+
+.page-container .tagcloud-content .tag-list li a[data-weight="3"] {
+  font-size: 1.4rem;
+}
+
+/* Keep the count badge proportional to its tag label. */
+.page-container .tagcloud-content .tag-list[data-show-value] li a::after {
+  font-size: 0.8em;
+}

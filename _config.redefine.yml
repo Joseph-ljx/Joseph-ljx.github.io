@@ -40,6 +40,9 @@ navbar:
     EXPERIENCE:
       path: /archives/
       icon: fa-regular fa-folder-open
+    SKILLS:
+      path: /tags/
+      icon: fa-solid fa-tags
     RESUME:
       icon: fa-regular fa-user
       path: /about/
@@ -60,6 +63,9 @@ articles:
     min2read: false
   author_label:
     list: ["Network Engineer"]
+
+page_templates:
+  tags_style: blur
 
 search:
   enable: true
@@ -84,6 +90,7 @@ inject:
     - <link rel="stylesheet" href="/css/nav-home-banner.css">
     - <link rel="stylesheet" href="/css/particles-background.css">
     - <link rel="stylesheet" href="/css/toc-performance.css">
+    - <link rel="stylesheet" href="/css/tags-page.css">
   footer:
     - <script defer src="/js/nav-home-banner.js"></script>
     - <script defer src="/js/particles-background.js"></script>
