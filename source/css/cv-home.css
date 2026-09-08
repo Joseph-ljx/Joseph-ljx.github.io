@@ -627,6 +627,19 @@ body.starry-night #app {
 .job-header .job-meta .separator {
     color: #ddd;
 }
+
+/* Resume page spacing: remove the empty template title gap, then give the
+   contact block a little breathing room before the section tabs. */
+.page-template-content:has(#tab-resume-sections) > h1:empty {
+    display: none;
+}
+.page-template-content:has(#tab-resume-sections) > #Jianxiang-Joseph-Liao {
+    margin-top: 0 !important;
+}
+.page-template-content:has(#tab-resume-sections) > #tab-resume-sections {
+    margin-top: 28px !important;
+}
+
 @media (max-width: 600px) { .cv-card { padding: 18px; gap: 15px; } .cv-logo-box { width: 48px; height: 48px; } .cv-card-header, .cv-card-subheader { flex-direction: column; align-items: flex-start; gap: 2px; } .cv-time, .cv-gpa { margin-left: 0; font-size: 12px; margin-top: 2px; } }
 
 /* === 首页底部 Preloader 动画 === */

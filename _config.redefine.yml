@@ -40,9 +40,6 @@ navbar:
     EXPERIENCE:
       path: /archives/
       icon: fa-regular fa-folder-open
-    # TRAVEL:
-    #   icon: fa-solid fa-bookmark
-    #   path: /bookmarks/
     RESUME:
       icon: fa-regular fa-user
       path: /about/
@@ -51,6 +48,11 @@ navbar:
       submenus:
         LINKEDIN: https://www.linkedin.com/in/joseph-liao/
         GITHUB: https://github.com/Joseph-ljx
+    OTHER:
+      icon: fa-regular fa-compass
+      submenus:
+        GALLERY: /masonry/
+        BOOKMARKS: /bookmarks/
 
 articles:
   word_count:

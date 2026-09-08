@@ -10,9 +10,11 @@ layout: "about"
 **Network & Automation Engineer** | **Full Stack SDE** | **Data Engineer**
 📧 jianxian2023@gmail.com &nbsp;|&nbsp; <i class="fab fa-linkedin"></i> &nbsp; [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; <i class="fab fa-github"></i> &nbsp; [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📄 <a href="/docs/Joseph%20Liao%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a> &nbsp;|&nbsp;📍 Los Angeles, CA
 
----
+{% tabs name="resume-sections" active=1 %}
 
-## <i class="fa-solid fa-graduation-cap"></i> Education
+<!-- tab title="Education" icon="<i class='fa-solid fa-graduation-cap'></i>" -->
+
+## Education
 
 <div class="job-header">
   <h3>Carnegie Mellon University</h3>
@@ -39,9 +41,9 @@ layout: "about"
 - **Dual Degree (Queen Mary, University of London):** Bachelor of E-Commerce and Law — **GPA 3.70 / 4.0**
 - **Courses:** Advanced Database Systems, Statistical Modeling, Web Information Systems, Data Mining, Internet Protocol
 
----
+<!-- tab title="Skills" icon="<i class='fa-solid fa-layer-group'></i>" -->
 
-## <i class="fa-solid fa-layer-group"></i> Technical Skills
+## Technical Skills
 
 | Category                   | Skills                                                                                      |
 | :------------------------- | :------------------------------------------------------------------------------------------ |
@@ -54,9 +56,9 @@ layout: "about"
 | **Cloud & Infrastructure** | AWS (EC2, EKS, RDS), Microsoft Azure, Azure Data Factory, Databricks                        |
 | **Observability**          | Grafana, Prometheus, Power BI, Tableau                                                      |
 
----
+<!-- tab title="Experience" icon="<i class='fa-solid fa-briefcase'></i>" -->
 
-## <i class="fa-solid fa-briefcase"></i> Work Experience
+## Work Experience
 
 <div class="job-header">
   <h3>Network & Automation Engineer</h3>
@@ -119,9 +121,9 @@ layout: "about"
 - Built an SMS alerting module for abnormal server state notifications and implemented **two-factor authentication with Redis** cache, improving security and login speed by **25%**.
 - Applied MantisBT for bug tracking; authored JUnit tests and PL/SQL scripts for black-box CRM testing.
 
----
+<!-- tab title="Awards" icon="<i class='fa-solid fa-award'></i>" -->
 
-## <i class="fa-solid fa-award"></i> Certifications & Awards
+## Certifications & Awards
 
 - **CCNP** — Cisco Certified Network Professional
 - **CCNA** — Cisco Certified Network Associate
@@ -129,9 +131,9 @@ layout: "about"
 - **Patent:** System and Apparatus for Natural Disaster Public Sentiment Analysis — _China Invention Patent ZL 2020 1 1494854.1 (2022)_
 - **Nomination:** The 38th CCF China National Database Academic Conference (NDBC 2021)
 
----
+<!-- tab title="Projects" icon="<i class='fa-solid fa-diagram-project'></i>" -->
 
-## <i class="fa-solid fa-diagram-project"></i> Selected Projects
+## Selected Projects
 
 <div class="job-header">
   <h4>NOC Operations Portal — AI-Powered Network Intelligence Platform</h4>
@@ -203,3 +205,5 @@ End-to-end platform crawling Weibo data (Python Scrapy), running NLP sentiment c
 Cloud-native microservices platform following BFF and Single Responsibility principles. Features Kafka async pipelines for email verification, circuit breaker resilience patterns, and scalable deployment via Docker, Kubernetes (EKS), and AWS EC2 with load balancers and pod replication.
 
 **Stack:** Java · Spring Boot · Kafka · Docker · Kubernetes (EKS) · AWS EC2 · PostgreSQL
+
+{% endtabs %}

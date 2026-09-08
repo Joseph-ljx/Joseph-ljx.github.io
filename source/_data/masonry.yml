@@ -1,0 +1,71 @@
+- image: /images/IMG_3717.jpg
+  width: 3840
+  height: 2160
+  title: On the Road
+  description: A moment collected along the journey.
+
+- image: /images/TCS_NLehoux_MainRD.jpg
+  width: 1500
+  height: 844
+  title: The Open Road
+  description: Infrastructure, distance, and the landscapes between them.
+
+- image: /images/background_1.jpeg
+  width: 3840
+  height: 2160
+  title: Blue Horizon
+  description: A quiet desktop landscape from the visual archive.
+
+- image: /images/cmu-linkedin.jpeg
+  width: 1239
+  height: 350
+  title: Carnegie Mellon University
+  description: Graduate studies in information systems management.
+
+- image: /images/cta-portal-cover.png
+  width: 2300
+  height: 800
+  title: NOC Operations Portal
+  description: AI-powered network intelligence and operations tooling.
+
+- image: /images/background_2.jpeg
+  width: 3840
+  height: 2160
+  title: Afterglow
+  description: Color, atmosphere, and a little space to breathe.
+
+- image: /images/bupt-linkedin.png
+  width: 1574
+  height: 629
+  title: BUPT
+  description: Undergraduate years in Beijing.
+
+- image: /images/aws-project/aws-project-vpc.png
+  width: 1808
+  height: 1438
+  title: Cloud Architecture
+  description: VPC and infrastructure design from an AWS project.
+
+- image: /images/HMC_bg.png
+  width: 1663
+  height: 881
+  title: Data Intelligence
+  description: Data engineering and forecasting work for investment research.
+
+- image: /images/background_3.jpeg
+  width: 5120
+  height: 2880
+  title: Nightscape
+  description: A cinematic frame from the site visual collection.
+
+- image: /images/disaster-monitor.png
+  width: 780
+  height: 344
+  title: Disaster Monitor
+  description: Natural-disaster public sentiment analysis and visualization.
+
+- image: /images/qmul-linkedin.jpg
+  width: 860
+  height: 377
+  title: Queen Mary University of London
+  description: E-commerce, law, and an international academic experience.
