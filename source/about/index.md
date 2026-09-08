@@ -8,7 +8,7 @@ layout: "about"
 # Jianxiang (Joseph) Liao
 
 **Network & Automation Engineer** | **Full Stack SDE** | **Data Engineer**
-📧 jianxian2023@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📄 <a href="/docs/Joseph%20Liao%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a> &nbsp;|&nbsp; 📍 Los Angeles, CA
+📧 jianxian2023@gmail.com &nbsp;|&nbsp; <i class="fab fa-linkedin"></i> &nbsp; [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; <i class="fab fa-github"></i> &nbsp; [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📄 <a href="/docs/Joseph%20Liao%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a> &nbsp;|&nbsp;📍 Los Angeles, CA
 
 ---
 
