@@ -1,7 +1,8 @@
 ---
-title: 🌍 Natural Disaster Monitor @ BUPT
+title: Natural Disaster Monitor @ BUPT
 date: 2021-06-05
 cover: /images/disaster-monitor.png
+type: project
 categories:
   - Projects
 tags:

@@ -1,9 +1,13 @@
 ---
-title: 🌐 NOC Operations Portal @ CTA
+title: NOC Operations Portal @ CTA
 date: 2026-01-20
 cover: /images/cta-portal-cover.png
+
+type: project
+
 categories:
   - Projects
+
 tags:
   - Django
   - Full Stack

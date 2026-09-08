@@ -1,7 +1,8 @@
 ---
-title: 🎓 Bachelor of E-Commerce & Law @ QMUL
+title: Bachelor of E-Commerce & Law @ QMUL
 date: 2021-07-30
 cover: /images/qmul-linkedin.jpg
+type: education
 categories:
   - Education
 tags:

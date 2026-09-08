@@ -1,7 +1,8 @@
 ---
-title: 🌐 Network Automation & Monitoring Platform @ CTA
+title: Network Automation & Monitoring Platform @ CTA
 date: 2025-06-01
 cover: /images/DevAdmin_bg.png
+type: project
 categories:
   - Projects
 tags:

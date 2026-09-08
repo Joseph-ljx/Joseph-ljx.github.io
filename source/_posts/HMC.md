@@ -1,7 +1,8 @@
 ---
-title: 💻 AI Data Engineer @ HMC
+title: AI Data Engineer @ HMC
 date: 2023-01-20
 cover: /images/HMC_bg.png
+type: work
 # password: hello
 # message: "🤖 Password Required: Email ddl1208@icloud.com for 🔑"
 # wrong_pass_message: Sorry, this password looks incorrect. Please try again.

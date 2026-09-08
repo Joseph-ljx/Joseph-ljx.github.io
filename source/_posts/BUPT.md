@@ -1,7 +1,8 @@
 ---
-title: 🎓 Bachelor of Engineering @ BUPT
+title: Bachelor of Engineering @ BUPT
 date: 2021-06-28
 cover: /images/bupt-linkedin.png
+type: education
 categories:
   - Education
 tags:

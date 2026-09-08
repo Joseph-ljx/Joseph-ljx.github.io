@@ -1,7 +1,8 @@
 ---
-title: 🎓 Master of IS @ CMU
+title: Master of IS @ CMU
 date: 2023-06-28
 cover: /images/cmu-linkedin.jpg
+type: education
 categories:
   - Education
 tags:

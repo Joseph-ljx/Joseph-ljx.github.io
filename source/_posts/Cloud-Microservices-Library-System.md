@@ -1,7 +1,8 @@
 ---
-title: 🛠️ Cloud Microservices Library System Project @ AWS
+title: Cloud Microservices Library System Project @ AWS
 date: 2023-01-15
 cover: /images/aws-project/aws-project.jpg
+type: project
 categories:
   - Project
 tags:

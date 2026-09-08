@@ -1,0 +1,33 @@
+.post-type-title,
+.home-article-title > a:has(> .post-type-icon),
+.archive-list-container .article-title:has(> .post-type-icon) {
+  display: inline-flex !important;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.post-type-icon {
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  color: currentColor;
+  opacity: 0.78;
+  overflow: visible;
+  margin-top: 0.12em;
+}
+
+.article-title-cover.post-type-title,
+.article-title-regular.post-type-title {
+  gap: 0.6rem;
+}
+
+.article-title-cover .post-type-icon,
+.article-title-regular .post-type-icon {
+  width: 0.82em;
+  height: 0.82em;
+}
+
+.archive-list-container .post-type-icon {
+  width: 0.92em;
+  height: 0.92em;
+}

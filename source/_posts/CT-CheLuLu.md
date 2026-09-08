@@ -1,7 +1,8 @@
 ---
-title: 💻 Backend Software Engineer Intern @ China Telecom
+title: Backend Software Engineer Intern @ China Telecom
 date: 2020-06-01
 cover: /images/chelulu_iov.png
+type: work
 categories:
   - Work Experience
 tags:
