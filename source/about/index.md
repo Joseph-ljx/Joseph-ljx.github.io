@@ -8,7 +8,7 @@ layout: "about"
 # Jianxiang (Joseph) Liao
 
 **Network & Automation Engineer** | **Full Stack SDE** | **Data Engineer**
-📧 jianxian2023@gmail.com &nbsp;|&nbsp; <i class="fab fa-linkedin"></i> &nbsp; [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; <i class="fab fa-github"></i> &nbsp; [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📄 <a href="/docs/Joseph%20Liao%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a> &nbsp;|&nbsp;📍 Los Angeles, CA
+📧 &nbsp; jianxian2023@gmail.com &nbsp;|&nbsp; <i class="fab fa-linkedin"></i> &nbsp; [LinkedIn](https://www.linkedin.com/in/joseph-liao/) &nbsp;|&nbsp; <i class="fab fa-github"></i> &nbsp; [GitHub](https://github.com/Joseph-ljx) &nbsp;|&nbsp; 📄 &nbsp; <a href="/docs/Joseph%20Liao%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a> &nbsp;|&nbsp;📍&nbsp; Los Angeles, CA
 
 {% tabs name="resume-sections" active=1 %}
 
@@ -119,7 +119,9 @@ layout: "about"
 
 - **CCNP** — Cisco Certified Network Professional
 - **CCNA** — Cisco Certified Network Associate
-- **CFA (lv1)** — Chartered Financial Analyst (level 1)
+- **Tianyi Cloud Operations Engineer Certification** — China Telecom
+- **Tianyi Cloud Practitioner Certification** — China Telecom
+- **CFA (LV1)** — Chartered Financial Analyst (level 1)
 - **Patent:** System and Apparatus for Natural Disaster Public Sentiment Analysis — _China Invention Patent ZL 2020 1 1494854.1 (2022)_
 - **Nomination:** The 38th CCF China National Database Academic Conference (NDBC 2021)
 
