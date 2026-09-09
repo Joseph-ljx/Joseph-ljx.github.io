@@ -1,6 +1,60 @@
 /* Light nav chrome over home hero only; .past-home-banner is toggled by JS after scroll. */
 /* Use same selector depth as theme style.css so rules win (inject loads before /css/style.css). */
 
+@keyframes navbar-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-container .logo-image {
+  transform: translateY(2px);
+}
+
+.navbar-container .logo-image img {
+  transform-origin: center;
+  transition: filter 0.3s ease;
+}
+
+.navbar-container .logo-image:hover img,
+.navbar-container .logo-image:focus-visible img {
+  animation: navbar-logo-spin 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.65));
+}
+
+/* Keep the transparent black mark visible on dark nav backgrounds. */
+html.dark .navbar-container .logo-image img,
+body:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-image img {
+  filter: invert(0.92);
+}
+
+html.dark .navbar-container .logo-image:hover img,
+html.dark .navbar-container .logo-image:focus-visible img,
+body:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-image:hover img,
+body:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-image:focus-visible img {
+  filter: invert(0.92) drop-shadow(0 0 6px rgba(59, 130, 246, 0.65));
+}
+
+/* The light particles palette uses dark navbar text, so keep the logo dark too. */
+body[data-particles-palette="white"]:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-image img {
+  filter: none;
+}
+
+body[data-particles-palette="white"]:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-image:hover img,
+body[data-particles-palette="white"]:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-image:focus-visible img {
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.65));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-container .logo-image:hover img,
+  .navbar-container .logo-image:focus-visible img {
+    animation: none;
+  }
+}
+
 body:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-title,
 body:not(.past-home-banner) .navbar-container .navbar-content.has-home-banner .logo-title h1 {
   color: rgba(255, 255, 255, 0.92);

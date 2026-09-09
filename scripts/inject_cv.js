@@ -1,13 +1,9 @@
-// Custom homepage assets. Keep the Hexo injector small; implementation lives
-// under source/css and source/js so the browser can cache each concern separately.
-hexo.extend.injector.register(
-  "head_end",
-  '<link rel="stylesheet" href="/css/cv-home.css">',
-);
-
-hexo.extend.injector.register(
-  "body_begin",
-  `
+// Hexo treats paginated indexes as `home`, while this experience belongs only
+// to the primary landing page. Detect the landing page's unique banner in the
+// completed HTML so `/page/2/` and all other pages stay free of these assets.
+const HOME_STYLESHEET = '<link rel="stylesheet" href="/css/cv-home.css">';
+const HOME_SCRIPT = '<script id="cv-home-script" defer src="/js/cv-home.js"></script>';
+const HOME_LOADER = `
   <div id="loader-overlay">
     <div class="cube-loader-container">
       <div class="action-rays"></div>
@@ -32,10 +28,26 @@ hexo.extend.injector.register(
       </div>
     </div>
   </div>
-`,
-);
+`;
 
+hexo.extend.filter.register("after_render:html", function injectHomeExperience(html) {
+  if (
+    !html.includes('class="home-banner-container') ||
+    !html.includes("</head>") ||
+    !html.includes("</body>")
+  ) {
+    return html;
+  }
+
+  return html
+    .replace("</head>", `${HOME_STYLESHEET}</head>`)
+    .replace(/(<body[^>]*>)/, `$1${HOME_LOADER}`)
+    .replace("</body>", `${HOME_SCRIPT}</body>`);
+});
+
+// Keep a tiny cached bridge on other pages so Swup navigation back to Home can
+// load the full Home assets before initializing the page experience.
 hexo.extend.injector.register(
   "body_end",
-  '<script defer src="/js/cv-home.js"></script>',
+  '<script defer src="/js/cv-home-loader.js"></script>',
 );

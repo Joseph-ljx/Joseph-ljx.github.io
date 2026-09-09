@@ -14,8 +14,6 @@ layout: "about"
 
 <!-- tab title="Education" icon="<i class='fa-solid fa-graduation-cap'></i>" -->
 
-## Education
-
 <div class="job-header">
   <h3>Carnegie Mellon University</h3>
   <div class="job-meta">
@@ -43,8 +41,6 @@ layout: "about"
 
 <!-- tab title="Skills" icon="<i class='fa-solid fa-layer-group'></i>" -->
 
-## Technical Skills
-
 | Category                   | Skills                                                                                      |
 | :------------------------- | :------------------------------------------------------------------------------------------ |
 | **Languages**              | Python, Java, Golang, TypeScript / JavaScript, SQL                                          |
@@ -57,8 +53,6 @@ layout: "about"
 | **Observability**          | Grafana, Prometheus, Power BI, Tableau                                                      |
 
 <!-- tab title="Experience" icon="<i class='fa-solid fa-briefcase'></i>" -->
-
-## Work Experience
 
 <div class="job-header">
   <h3>Network & Automation Engineer</h3>
@@ -121,9 +115,7 @@ layout: "about"
 - Built an SMS alerting module for abnormal server state notifications and implemented **two-factor authentication with Redis** cache, improving security and login speed by **25%**.
 - Applied MantisBT for bug tracking; authored JUnit tests and PL/SQL scripts for black-box CRM testing.
 
-<!-- tab title="Awards" icon="<i class='fa-solid fa-award'></i>" -->
-
-## Certifications & Awards
+<!-- tab title="Awards & Certificates" icon="<i class='fa-solid fa-award'></i>" -->
 
 - **CCNP** — Cisco Certified Network Professional
 - **CCNA** — Cisco Certified Network Associate
@@ -133,10 +125,8 @@ layout: "about"
 
 <!-- tab title="Projects" icon="<i class='fa-solid fa-diagram-project'></i>" -->
 
-## Selected Projects
-
 <div class="job-header">
-  <h4>NOC Operations Portal — AI-Powered Network Intelligence Platform</h4>
+  <h3>NOC Operations Portal — AI-Powered Network Intelligence Platform</h3>
   <div class="job-meta">
     <span><i class="fa-regular fa-building"></i> China Telecom Americas</span>
     <span class="separator">|</span>
@@ -144,14 +134,12 @@ layout: "about"
   </div>
 </div>
 
-Full-stack internal platform for managing the AS36678 backbone. Provides real-time topology visualization, batch configuration automation (Netmiko / Nornir), SNMP alarm monitoring, RPKI validation, circuit and asset inventory, and LLM-assisted network troubleshooting — covering **100+ backbone devices across 10 US data center cages**.
+- Built a full-stack internal platform for managing the AS36678 backbone, covering **100+ backbone devices across 10 US data center cages**.
+- Delivered real-time topology visualization, batch configuration automation, SNMP alarm monitoring, RPKI validation, circuit and asset inventory, and LLM-assisted network troubleshooting.
+- **Stack:** Python · Django · PostgreSQL · Netmiko · Nornir · TextFSM · Celery · Redis · Docker
 
-**Stack:** Python · Django · PostgreSQL · Netmiko · Nornir · TextFSM · Celery · Redis · Docker
-
----
-
-<div class="job-header">
-  <h4>Network Automation & Monitoring Platform (AS36678)</h4>
+<div class="job-header" style="margin-top: 24px;">
+  <h3>Network Automation & Monitoring Platform (AS36678)</h3>
   <div class="job-meta">
     <span><i class="fa-regular fa-building"></i> China Telecom Americas</span>
     <span class="separator">|</span>
@@ -159,14 +147,12 @@ Full-stack internal platform for managing the AS36678 backbone. Provides real-ti
   </div>
 </div>
 
-Python-based automation framework for managing **100+ multi-vendor backbone devices** across the AS36678 network. Handles batch command execution (Netmiko / Nornir), structured CLI output parsing (TextFSM), vendor hotcut email parsing with auto-alert dispatch, RPKI prefix validation, and scheduled health-check pipelines — replacing manual NOC workflows with reliable, auditable automation.
+- Built a Python automation framework for managing **100+ multi-vendor backbone devices** across the AS36678 network.
+- Automated batch command execution, structured CLI parsing, vendor hotcut email alerts, RPKI validation, and scheduled health checks—replacing manual NOC workflows with reliable, auditable automation.
+- **Stack:** Python · Netmiko · Nornir · TextFSM · Linux Crontab · SNMP · RPKI · PostgreSQL
 
-**Stack:** Python · Netmiko · Nornir · TextFSM · Linux Crontab · SNMP · RPKI · PostgreSQL
-
----
-
-<div class="job-header">
-  <h4>Hedge Fund Intelligence Platform</h4>
+<div class="job-header" style="margin-top: 24px;">
+  <h3>Hedge Fund Intelligence Platform</h3>
   <div class="job-meta">
     <span><i class="fa-regular fa-building"></i> Harvard Management Company</span>
     <span class="separator">|</span>
@@ -174,14 +160,12 @@ Python-based automation framework for managing **100+ multi-vendor backbone devi
   </div>
 </div>
 
-Automated data intelligence platform ingesting and structuring data from **1,200+ hedge funds** across SEC EDGAR, IRS filings, and Kaggle. Features ETL pipelines, ML-driven forecasting (SARIMAX / Prophet / GBR), graph-based fund relationship modeling in Neo4j, and RESTful search APIs for investment analysts.
+- Built an automated data intelligence platform ingesting and structuring data from **1,200+ hedge funds** across SEC EDGAR, IRS filings, and Kaggle.
+- Developed ETL pipelines, ML-driven forecasting, graph-based fund relationship modeling in Neo4j, and RESTful search APIs for investment analysts.
+- **Stack:** Python · Azure Data Factory · Databricks · Spark · Airflow · MongoDB · Neo4j · Power BI
 
-**Stack:** Python · Azure Data Factory · Databricks · Spark · Airflow · MongoDB · Neo4j · Power BI
-
----
-
-<div class="job-header">
-  <h4>Online Social Media Monitor — Natural Disaster & COVID-19 Sentiment</h4>
+<div class="job-header" style="margin-top: 24px;">
+  <h3>Online Social Media Monitor — Natural Disaster Sentiment</h3>
   <div class="job-meta">
     <span><i class="fa-regular fa-building"></i> Beijing University of Posts and Telecommunications</span>
     <span class="separator">|</span>
@@ -189,21 +173,19 @@ Automated data intelligence platform ingesting and structuring data from **1,200
   </div>
 </div>
 
-End-to-end platform crawling Weibo data (Python Scrapy), running NLP sentiment classification and topic modeling, and rendering geo-heatmaps / trend dashboards via Vue.js + ECharts + Maptalks. Accepted at **NDBC 2021** and granted a China Invention Patent.
+- Built an end-to-end platform that crawls Weibo data and performs NLP sentiment classification and topic modeling.
+- Rendered geographic heatmaps and trend dashboards; the project was accepted at **NDBC 2021** and granted a China Invention Patent.
+- **Stack:** Python · Django · Scrapy · Vue.js · ECharts · Maptalks · RESTful API
 
-**Stack:** Python · Django · Scrapy · Vue.js · ECharts · Maptalks · RESTful API
-
----
-
-<div class="job-header">
-  <h4>Service-Oriented Library Backend System</h4>
+<div class="job-header" style="margin-top: 24px;">
+  <h3>Service-Oriented Library Backend System</h3>
   <div class="job-meta">
     <span><i class="fa-regular fa-building"></i> Carnegie Mellon University</span>
   </div>
 </div>
 
-Cloud-native microservices platform following BFF and Single Responsibility principles. Features Kafka async pipelines for email verification, circuit breaker resilience patterns, and scalable deployment via Docker, Kubernetes (EKS), and AWS EC2 with load balancers and pod replication.
-
-**Stack:** Java · Spring Boot · Kafka · Docker · Kubernetes (EKS) · AWS EC2 · PostgreSQL
+- Designed a cloud-native microservices platform following BFF and Single Responsibility principles.
+- Implemented Kafka asynchronous pipelines for email verification, circuit-breaker resilience, and scalable deployment with load balancers and pod replication.
+- **Stack:** Java · Spring Boot · Kafka · Docker · Kubernetes (EKS) · AWS EC2 · PostgreSQL
 
 {% endtabs %}
