@@ -84,11 +84,11 @@
   title: UPS Monitoring with SNMP
   description: SNMP trap processing and alert routing for uninterruptible power supply monitoring.
 
-- image: /images/aws-project/aws-project-vpc.png
-  width: 1808
-  height: 1438
-  title: AWS Infrastructure Design
-  description: Network segmentation and service deployment across public and private subnets.
+- image: /images/HMC_Search_Model.png
+  width: 1524
+  height: 862
+  title: Investment Research Search
+  description: Search model design for investment research, combining document indexing, retrieval models, and query expansion.
 
 - image: /images/VUE_monitor.png
   width: 1612
