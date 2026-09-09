@@ -1,26 +1,28 @@
-- image: /images/IMG_3717.jpg
-  width: 3840
-  height: 2160
-  title: On the Road
-  description: A moment collected along the journey.
+# Use the original image dimensions; the gallery calculates display sizes automatically.
 
-- image: /images/TCS_NLehoux_MainRD.jpg
+- image: /images/Auto_Maintenance.png
+  width: 3248
+  height: 2484
+  title: Maintenance Automation
+  description: Workflow design for automated maintenance, status checks, and notifications.
+
+- image: /images/chelulu_iov.png
+  width: 1092
+  height: 466
+  title: Connected Mobility
+  description: Cloud-connected vehicle services, from navigation to remote diagnostics.
+
+- image: /images/DevAdmin_2.png
   width: 1500
-  height: 844
-  title: The Open Road
-  description: Infrastructure, distance, and the landscapes between them.
-
-- image: /images/background_1.jpeg
-  width: 3840
-  height: 2160
-  title: Blue Horizon
-  description: A quiet desktop landscape from the visual archive.
+  height: 600
+  title: Network Operations Overview
+  description: A unified view of network inventory, traffic, and operational insights.
 
 - image: /images/cmu-linkedin.jpeg
   width: 1239
   height: 350
   title: Carnegie Mellon University
-  description: Graduate studies in information systems management.
+  description: Graduate studies in information technology.
 
 - image: /images/cta-portal-cover.png
   width: 2300
@@ -28,44 +30,68 @@
   title: NOC Operations Portal
   description: AI-powered network intelligence and operations tooling.
 
-- image: /images/background_2.jpeg
-  width: 3840
-  height: 2160
-  title: Afterglow
-  description: Color, atmosphere, and a little space to breathe.
+- image: /images/DevAdmin_bg.png
+  width: 1500
+  height: 600
+  title: Network Automation Platform
+  description: Monitoring, diagnostics, and automation for backbone network operations.
 
 - image: /images/bupt-linkedin.png
   width: 1574
   height: 629
-  title: BUPT
-  description: Undergraduate years in Beijing.
+  title: Beijing University of Posts and Telecommunications
+  description: Undergraduate studies in e-commerce engineering and law.
 
 - image: /images/aws-project/aws-project-vpc.png
   width: 1808
   height: 1438
   title: Cloud Architecture
-  description: VPC and infrastructure design from an AWS project.
+  description: A multi-zone AWS architecture with load balancing, auto scaling, and database replication.
 
 - image: /images/HMC_bg.png
   width: 1663
   height: 881
-  title: Data Intelligence
-  description: Data engineering and forecasting work for investment research.
+  title: Investment Research
+  description: An overview of hedge fund participants, capital flows, and asset classes.
 
-- image: /images/background_3.jpeg
-  width: 5120
-  height: 2880
-  title: Nightscape
-  description: A cinematic frame from the site visual collection.
+- image: /images/Hubble.png
+  width: 1744
+  height: 690
+  title: Hubble
+  description: An interactive interior view for exploring connected living spaces.
 
 - image: /images/disaster-monitor.png
   width: 780
   height: 344
   title: Disaster Monitor
-  description: Natural-disaster public sentiment analysis and visualization.
+  description: Mapping natural-disaster public sentiment through data analysis and visualization.
 
 - image: /images/qmul-linkedin.jpg
   width: 860
   height: 377
   title: Queen Mary University of London
   description: E-commerce, law, and an international academic experience.
+
+- image: /images/MealPal.png
+  width: 980
+  height: 477
+  title: MealPal
+  description: Cloud deployment architecture connecting a React application, backend services, and AWS RDS.
+
+- image: /images/UPS_SNMP.png
+  width: 1023
+  height: 537
+  title: UPS Monitoring with SNMP
+  description: SNMP trap processing and alert routing for uninterruptible power supply monitoring.
+
+- image: /images/aws-project/aws-project-vpc.png
+  width: 1808
+  height: 1438
+  title: AWS Infrastructure Design
+  description: Network segmentation and service deployment across public and private subnets.
+
+- image: /images/VUE_monitor.png
+  width: 1612
+  height: 1404
+  title: Regional Monitoring Dashboard
+  description: A visual overview of regional metrics, trends, and geographic data.

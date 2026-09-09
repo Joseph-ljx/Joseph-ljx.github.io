@@ -1,0 +1,49 @@
+/* Keep each masonry card exactly as tall as its original image ratio. */
+#masonry-container .image-container {
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--background-color);
+  box-shadow: 0 0 0 1px var(--border-color);
+}
+
+#masonry-container .masonry-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#masonry-container .image-title,
+#masonry-container .image-description {
+  color: #fff;
+  background: rgb(18 24 32 / 76%);
+  border-radius: 8px;
+  padding: 7px 10px;
+  line-height: 1.45;
+  pointer-events: none;
+  max-width: calc(100% - 40px);
+}
+
+#masonry-container .image-title {
+  top: 10px;
+  left: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#masonry-container .image-description {
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #masonry-container img,
+  #masonry-container .image-title,
+  #masonry-container .image-description {
+    transition: none;
+  }
+}
